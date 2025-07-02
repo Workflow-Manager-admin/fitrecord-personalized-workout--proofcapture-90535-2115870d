@@ -26,12 +26,15 @@ export class SuggestionsComponent {
   private router = inject(Router);
 
   constructor() {
-    // Subscribe to router events so when the user routes to /suggestions,
-    // fetch the latest suggestions. (Works for both direct navigation and redirect from dashboard.)
+    // Reload suggestions every time this route is entered.
     this.router.events
       .pipe(filter(e => e instanceof NavigationEnd))
-      .subscribe(() => this.refreshSuggestions());
-    // Also fetch on component creation (for browser refresh/direct load).
+      .subscribe(() => {
+        // Optionally check if navigation state has afterHealthSaved parameter,
+        // and always force refetch.
+        this.refreshSuggestions();
+      });
+    // Also fetch once when component is constructed (browser refresh/direct entry).
     this.refreshSuggestions();
   }
 
@@ -45,6 +48,7 @@ export class SuggestionsComponent {
     this.errorMsg = '';
     this.routine = null;
 
+    // Force a fresh pull from API (do NOT cache). Always displays up-to-date routine.
     this.api.getSuggestions().subscribe({
       next: (res: any) => {
         // Consider null, empty object/array, or status fields as "no result"

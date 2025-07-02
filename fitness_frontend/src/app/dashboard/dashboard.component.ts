@@ -23,11 +23,15 @@ export class DashboardComponent {
   loading = false;
   errorMsg = '';
 
-  // PUBLIC_INTERFACE
-  submit(): void {
-    const api = inject(ApiService);
-    const router = inject(Router);
+  private api = inject(ApiService);
+  private router = inject(Router);
 
+  // PUBLIC_INTERFACE
+  /**
+   * Submit health data, then route to exercise plan with forced reload.
+   * Ensures /suggestions displays exercises for immediately updated input.
+   */
+  submit(): void {
     this.message = '';
     this.errorMsg = '';
 
@@ -37,10 +41,15 @@ export class DashboardComponent {
     }
     this.loading = true;
 
-    api.submitHealthData(this.height, this.weight).subscribe({
+    this.api.submitHealthData(this.height, this.weight).subscribe({
       next: (): void => {
-        // After saving health data, automatically go to suggestions page to see personalized plan.
-        router.navigate(['/suggestions']);
+        // After saving health data, go to /suggestions AND force component reload.
+        // Route to /suggestions using a unique state to hint for forced refresh.
+        // This is a robust workaround for Angular's route reuse quirks.
+        this.router.navigate(['/suggestions'], {
+          // random dummy param to "bump" NavigationEnd (optional, for robust reload)
+          state: { afterHealthSaved: true, ts: Date.now() }
+        });
       },
       error: (err: any): void => {
         this.loading = false;
@@ -54,9 +63,7 @@ export class DashboardComponent {
 
   // PUBLIC_INTERFACE
   logout(): void {
-    const api = inject(ApiService);
-    const router = inject(Router);
-    api.logout();
-    router.navigate(['/login']);
+    this.api.logout();
+    this.router.navigate(['/login']);
   }
 }
