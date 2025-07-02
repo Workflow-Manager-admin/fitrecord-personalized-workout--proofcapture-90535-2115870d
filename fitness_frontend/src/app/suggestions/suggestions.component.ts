@@ -4,6 +4,8 @@ import { ApiService } from '../api.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
+
+
 /**
  * SuggestionsComponent
  * Displays the latest personalized exercise plan for the user.
