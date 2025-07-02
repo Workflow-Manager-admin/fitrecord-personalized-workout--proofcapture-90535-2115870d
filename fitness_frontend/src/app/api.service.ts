@@ -8,7 +8,7 @@ export class ApiService {
   /** All backend API requests use this base URL. Adjust if needed. */
   private readonly apiBase = 'http://localhost:3001';
 
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
   /** PUBLIC_INTERFACE: Registers a new user with the backend. */
   register(email: string, password: string): Observable<any> {

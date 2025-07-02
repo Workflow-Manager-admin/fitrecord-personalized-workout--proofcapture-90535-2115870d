@@ -19,8 +19,19 @@ export class UploadComponent {
 
   // No constructor required since no DI services are actually referenced.
 
-  onFileChange() {
+  onFileChange(event: Event) {
     // Implementation must be updated if ApiService needed.
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files[0]) {
+      this.selectedFile = input.files[0];
+      this.selectedFileType = this.selectedFile.type;
+      const reader = new FileReader();
+      reader.onload = (e: any) => {
+        this.previewUrl = e.target.result;
+      };
+      reader.readAsDataURL(this.selectedFile);
+      this.errorMsg = '';
+    }
   }
 
   onUpload() {
