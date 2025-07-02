@@ -82,9 +82,27 @@ export class SuggestionsComponent {
       return;
     }
 
+    // Debug: log outgoing request details (remove in production)
+    const debugPayload = { height: this.height, weight: this.weight };
+    let debugHeaders: any = {};
+    try {
+      debugHeaders = this.api.getAuthHeaders();
+    } catch (err) {
+      console.warn('Could not get auth headers:', err);
+    }
+    console.debug(
+      '[SuggestionsComponent] Requesting exercise suggestions...',
+      {
+        url: 'POST /exercise/suggestion',
+        payload: debugPayload,
+        headers: debugHeaders,
+      }
+    );
+
     // Call the correct backend endpoint with required payload (POST /exercise/suggestion with {height, weight})
     this.api.getSuggestionsWithPayload(this.height, this.weight).subscribe({
       next: (res: any) => {
+        console.debug('[SuggestionsComponent] Response from /exercise/suggestion:', res);
         if (
           !res ||
           (Array.isArray(res) && res.length === 0) ||
@@ -102,6 +120,8 @@ export class SuggestionsComponent {
         this.loading = false;
       },
       error: (err: any) => {
+        // Debug: log full error object
+        console.error('[SuggestionsComponent] Error response from /exercise/suggestion:', err);
         if (err && err.status === 404) {
           this.errorMsg = 'No exercise suggestions found for the provided data.';
         } else if (err && (err.status === 0 || err.status >= 500)) {
