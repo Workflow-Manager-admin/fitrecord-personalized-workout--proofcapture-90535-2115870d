@@ -14,62 +14,42 @@ export class UploadComponent implements OnDestroy {
   errorMsg = '';
   uploadMsg = '';
   uploading = false;
-  previewUrl: string | null = null;
+  // The following fields related to the removed file option are deleted:
+  // - previewUrl, selectedFileType
+
   selectedFile: File | null = null;
-  selectedFileType: string | null = null;
+  videoPreviewUrl: string | null = null;
 
   // Webcam/video recording state
   isRecording = false;
   videoStream: MediaStream | null = null;
   mediaRecorder: MediaRecorder | null = null;
   recordedChunks: Blob[] = [];
-  videoPreviewUrl: string | null = null;
   isCameraEnabled = false;
 
   // PUBLIC_INTERFACE
   ngOnDestroy() {
     this.stopCamera();
-    this.revokePreviewUrls();
+    this.revokePreviewUrl();
   }
 
-  // Handle file upload from file input
-  onFileChange(event: Event) {
-    this.stopCamera();
-    const input = event.target as HTMLInputElement;
-    if (input.files && input.files[0]) {
-      this.selectedFile = input.files[0];
-      this.selectedFileType = this.selectedFile.type;
-      const reader = new FileReader();
-      reader.onload = (e: any) => {
-        this.previewUrl = e.target.result;
-        this.videoPreviewUrl = null;
-      };
-      reader.readAsDataURL(this.selectedFile);
-      this.errorMsg = '';
-    }
-  }
-
-  // Start the webcam with video only
+  // Only enable video camera and clear any leftover state
   async enableCamera() {
     try {
       if (this.videoStream) this.stopCamera();
-      // Use window.navigator instead of navigator to let the linter know this is a browser global
       this.videoStream = await window.navigator.mediaDevices.getUserMedia({ video: true, audio: true });
       this.isCameraEnabled = true;
       this.errorMsg = '';
-      // Remove file selection and URL preview if switching to camera
       this.selectedFile = null;
-      this.selectedFileType = null;
-      this.previewUrl = null;
       this.uploadMsg = '';
-      this.revokePreviewUrls();
+      this.revokePreviewUrl();
       this.videoPreviewUrl = null;
     } catch {
       this.errorMsg = 'Unable to access camera. Please grant permission.';
     }
   }
 
-  // Stop the webcam stream and preview/releasing resources
+  // Stop webcam and associated resources
   stopCamera() {
     if (this.videoStream) {
       this.videoStream.getTracks().forEach(track => track.stop());
@@ -98,10 +78,8 @@ export class UploadComponent implements OnDestroy {
       this.mediaRecorder.onstop = () => {
         const blob = new Blob(this.recordedChunks, { type: 'video/webm' });
         this.selectedFile = new File([blob], 'workout-proof.webm', { type: 'video/webm' });
-        this.selectedFileType = 'video/webm';
-        this.revokePreviewUrls();
+        this.revokePreviewUrl();
         this.videoPreviewUrl = URL.createObjectURL(blob);
-        this.previewUrl = null;
       };
       this.mediaRecorder.start();
       this.isRecording = true;
@@ -118,34 +96,28 @@ export class UploadComponent implements OnDestroy {
     }
   }
 
-  revokePreviewUrls() {
+  revokePreviewUrl() {
     if (this.videoPreviewUrl) {
       URL.revokeObjectURL(this.videoPreviewUrl);
       this.videoPreviewUrl = null;
     }
-    if (this.previewUrl) {
-      // Not a native objectURL, only revoke if it's an objectURL
-      if (this.previewUrl.startsWith('blob:')) URL.revokeObjectURL(this.previewUrl);
-    }
   }
 
-  // Prepare and upload the selected proof file
+  // Only allow upload after video is present (no file picker possible)
   async onUpload() {
     this.uploadMsg = '';
     this.errorMsg = '';
     if (!this.selectedFile) {
-      this.errorMsg = 'No file selected. Record a video or choose a file.';
+      this.errorMsg = 'No video recorded. Please record a video from your camera.';
       return;
     }
     this.uploading = true;
     try {
-      // API service is not injected in this starter; show fake upload for demo
+      // API service is not injected in this starter; show demo message for now
       await new Promise(resolve => window.setTimeout(resolve, 1000));
       this.uploadMsg = 'Upload successful! Workout proof received 👏';
       this.selectedFile = null;
-      this.selectedFileType = null;
-      this.previewUrl = null;
-      this.revokePreviewUrls();
+      this.revokePreviewUrl();
     } catch {
       this.errorMsg = 'Upload failed.';
     } finally {

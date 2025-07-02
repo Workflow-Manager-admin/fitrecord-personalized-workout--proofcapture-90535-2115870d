@@ -11,36 +11,36 @@ Initial chunk files  | Names                 |  Raw size
 polyfills.js         | polyfills             |  90.20 kB | 
 main.js              | main                  |   5.80 kB | 
 styles.css           | styles                |   4.78 kB | 
-chunk-YQOESBWP.js    | -                     | 754 bytes | 
+chunk-VTZCDIGA.js    | -                     |   1.31 kB | 
 
-                     | Initial total         | 101.53 kB
+                     | Initial total         | 102.09 kB
 
 Lazy chunk files     | Names                 |  Raw size
-chunk-FF2IYIGA.js    | dashboard-component   |   6.98 kB | 
-chunk-RHOFRNH6.js    | auth-component        |   6.60 kB | 
-chunk-7M3HXXQV.js    | upload-component      |   6.19 kB | 
-chunk-3VQSXFZ5.js    | history-component     |   6.02 kB | 
-chunk-27IK4EZU.js    | health-component      |   4.02 kB | 
-chunk-P7VSMNUN.js    | suggestions-component |   3.57 kB | 
+chunk-4SATVEVU.js    | upload-component      |  14.51 kB | 
+chunk-EISBSUFK.js    | dashboard-component   |   6.98 kB | 
+chunk-BGO7C7RQ.js    | auth-component        |   6.60 kB | 
+chunk-VJBCZY24.js    | history-component     |   6.02 kB | 
+chunk-QCWNXCYZ.js    | health-component      |   4.02 kB | 
+chunk-ZBE2BHSI.js    | suggestions-component |   3.57 kB | 
 
 
 Server bundles      
 Initial chunk files  | Names                 |  Raw size
 polyfills.server.mjs | polyfills.server      | 572.91 kB | 
-chunk-IB3ITIV7.mjs   | -                     |   6.21 kB | 
+chunk-WLRHYYVZ.mjs   | -                     |   6.21 kB | 
 server.mjs           | server                |   1.42 kB | 
+chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
 main.server.mjs      | main.server           | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                     | 788 bytes | 
 
 Lazy chunk files     | Names                 |  Raw size
-chunk-EV5WBY2T.mjs   | dashboard-component   |   7.01 kB | 
-chunk-D33UCDPW.mjs   | auth-component        |   6.64 kB | 
-chunk-HPRVHLC2.mjs   | upload-component      |   6.22 kB | 
-chunk-GJXKYCRL.mjs   | history-component     |   6.05 kB | 
-chunk-ZQZE67EA.mjs   | health-component      |   4.05 kB | 
-chunk-KXI2I65S.mjs   | suggestions-component |   3.60 kB | 
+chunk-IV3X3ELT.mjs   | upload-component      |  14.54 kB | 
+chunk-U2D2WNEZ.mjs   | dashboard-component   |   7.01 kB | 
+chunk-FK5CO2ZD.mjs   | auth-component        |   6.64 kB | 
+chunk-YCD5ZHUO.mjs   | history-component     |   6.05 kB | 
+chunk-WEKJEZHA.mjs   | health-component      |   4.05 kB | 
+chunk-HSPYXBAW.mjs   | suggestions-component |   3.60 kB | 
 
-Application bundle generation complete. [2.846 seconds]
+Application bundle generation complete. [2.721 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -49,37 +49,27 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
-Initial chunk files | Names                 |  Raw size
-main.js             | main                  |   5.80 kB | 
-chunk-VTZCDIGA.js   | -                     |   1.31 kB | 
+Initial chunk files | Names            |  Raw size
+main.js             | main             |   5.80 kB | 
 
-Lazy chunk files    | Names                 |  Raw size
-chunk-KMOTTL6D.js   | upload-component      |   9.92 kB | 
-chunk-EISBSUFK.js   | dashboard-component   |   6.98 kB | 
-chunk-BGO7C7RQ.js   | auth-component        |   6.60 kB | 
-chunk-VJBCZY24.js   | history-component     |   6.02 kB | 
-chunk-QCWNXCYZ.js   | health-component      |   4.02 kB | 
-chunk-ZBE2BHSI.js   | suggestions-component |   3.57 kB | 
+Lazy chunk files    | Names            |  Raw size
+chunk-NZ255ML2.js   | upload-component |  12.61 kB | 
 
 
 Server bundles     
-Initial chunk files | Names                 |  Raw size
-chunk-ILM242G4.mjs  | -                     |   6.21 kB | 
-server.mjs          | server                |   1.42 kB | 
-chunk-4LWRAYML.mjs  | -                     |   1.35 kB | 
-main.server.mjs     | main.server           | 831 bytes | 
+Initial chunk files | Names            |  Raw size
+chunk-Y5ICZFDH.mjs  | -                |   6.21 kB | 
+server.mjs          | server           |   1.42 kB | 
+main.server.mjs     | main.server      | 831 bytes | 
 
-Lazy chunk files    | Names                 |  Raw size
-chunk-OVGFYD2U.mjs  | upload-component      |   9.95 kB | 
-chunk-U2D2WNEZ.mjs  | dashboard-component   |   7.01 kB | 
-chunk-FK5CO2ZD.mjs  | auth-component        |   6.64 kB | 
-chunk-YCD5ZHUO.mjs  | history-component     |   6.05 kB | 
-chunk-WEKJEZHA.mjs  | health-component      |   4.05 kB | 
-chunk-HSPYXBAW.mjs  | suggestions-component |   3.60 kB | 
+Lazy chunk files    | Names            |  Raw size
+chunk-ZPHJJC7V.mjs  | upload-component |  12.64 kB | 
 
-Application bundle generation complete. [0.905 seconds]
+Application bundle generation complete. [0.790 seconds]
 
 Page reload sent to client(s).
+1:33:39 PM [vite] Internal server error: ɵgetOrCreateAngularServerApp is not a function
+      at /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/build/src/tools/vite/middlewares/ssr-middleware.js:30:38
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
@@ -87,84 +77,18 @@ Initial chunk files | Names            |  Raw size
 main.js             | main             |   5.80 kB | 
 
 Lazy chunk files    | Names            |  Raw size
-chunk-4676FOSE.js   | upload-component |  14.31 kB | 
+chunk-D3CGBGY4.js   | upload-component |  11.86 kB | 
 
 
 Server bundles     
 Initial chunk files | Names            |  Raw size
-chunk-IWMFI2O3.mjs  | -                |   6.21 kB | 
+chunk-RTZJALF3.mjs  | -                |   6.21 kB | 
 server.mjs          | server           |   1.42 kB | 
 main.server.mjs     | main.server      | 831 bytes | 
 
 Lazy chunk files    | Names            |  Raw size
-chunk-5H2XINNI.mjs  | upload-component |  14.34 kB | 
+chunk-WVFGOOIE.mjs  | upload-component |  11.89 kB | 
 
-Application bundle generation complete. [0.317 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names            |  Raw size
-main.js             | main             |   5.80 kB | 
-
-Lazy chunk files    | Names            |  Raw size
-chunk-ONJTTG55.js   | upload-component |  14.75 kB | 
-
-
-Server bundles     
-Initial chunk files | Names            |  Raw size
-chunk-JWE34IOU.mjs  | -                |   6.21 kB | 
-server.mjs          | server           |   1.42 kB | 
-main.server.mjs     | main.server      | 831 bytes | 
-
-Lazy chunk files    | Names            |  Raw size
-chunk-TVZR7F5H.mjs  | upload-component |  14.79 kB | 
-
-Application bundle generation complete. [0.395 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names            |  Raw size
-main.js             | main             |   5.80 kB | 
-
-Lazy chunk files    | Names            |  Raw size
-chunk-QO22EAYT.js   | upload-component |  14.51 kB | 
-
-
-Server bundles     
-Initial chunk files | Names            |  Raw size
-chunk-OAKOC33L.mjs  | -                |   6.21 kB | 
-server.mjs          | server           |   1.42 kB | 
-main.server.mjs     | main.server      | 831 bytes | 
-
-Lazy chunk files    | Names            |  Raw size
-chunk-CJP6YVWX.mjs  | upload-component |  14.54 kB | 
-
-Application bundle generation complete. [0.419 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names            |  Raw size
-main.js             | main             |   5.80 kB | 
-
-Lazy chunk files    | Names            |  Raw size
-chunk-4SATVEVU.js   | upload-component |  14.51 kB | 
-
-
-Server bundles     
-Initial chunk files | Names            |  Raw size
-chunk-WLRHYYVZ.mjs  | -                |   6.21 kB | 
-server.mjs          | server           |   1.42 kB | 
-main.server.mjs     | main.server      | 831 bytes | 
-
-Lazy chunk files    | Names            |  Raw size
-chunk-IV3X3ELT.mjs  | upload-component |  14.54 kB | 
-
-Application bundle generation complete. [0.489 seconds]
+Application bundle generation complete. [0.471 seconds]
 
 Page reload sent to client(s).

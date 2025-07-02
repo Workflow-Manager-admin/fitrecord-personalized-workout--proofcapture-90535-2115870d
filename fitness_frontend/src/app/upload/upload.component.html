@@ -1,8 +1,5 @@
 <div class="upload-container">
   <h2>Upload Workout Proof</h2>
-  <!-- Choose File or Use Camera -->
-  <input type="file" accept="image/*,video/*" (change)="onFileChange($event)" capture="environment" [disabled]="isCameraEnabled || isRecording" />
-  <div class="or-divider">OR</div>
   <button (click)="enableCamera()" [disabled]="isCameraEnabled || isRecording" *ngIf="!isCameraEnabled">Record from Camera</button>
   <div *ngIf="isCameraEnabled">
     <video #videoEl autoplay playsinline muted [srcObject]="videoStream" [style.width.px]="260" style="margin:1rem auto;display:block;background:#111; border-radius:10px;"></video>
@@ -18,12 +15,6 @@
   <div *ngIf="videoPreviewUrl">
     <video [src]="videoPreviewUrl" width="240" controls style="margin-top:1rem;border-radius:8px;"></video>
     <div>Preview: Recently recorded video.</div>
-  </div>
-  <div *ngIf="previewUrl && selectedFileType?.startsWith('image/')">
-    <img [src]="previewUrl" width="220" alt="proof preview">
-  </div>
-  <div *ngIf="previewUrl && selectedFileType?.startsWith('video/')">
-    <video [src]="previewUrl" width="240" controls></video>
   </div>
   <div *ngIf="errorMsg" class="error">{{errorMsg}}</div>
   <button (click)="onUpload()" [disabled]="uploading || isRecording">Upload</button>
