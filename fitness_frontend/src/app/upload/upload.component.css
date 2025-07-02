@@ -14,3 +14,20 @@
 .upload-container button { background:#ff2465; color:#fff; border:none; border-radius:6px; padding:.7rem 1.2rem; margin:1rem;}
 .upload-container .error { color:#d92132;}
 .upload-container .success{ color:#26813b;}
+.or-divider {
+  margin: 0.7rem 0 0.7rem 0;
+  color: #757575;
+  font-size: 0.97rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+}
+.or-divider:before, .or-divider:after {
+  display: block;
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e3e3e3;
+  margin: 0 10px 0 10px;
+}
