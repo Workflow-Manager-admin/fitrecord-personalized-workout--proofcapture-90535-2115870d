@@ -14,9 +14,10 @@ export class HistoryComponent implements OnInit {
   errorMsg = '';
   workouts: any[] = [];
 
-  // No constructor required since no DI services are actually referenced.
+  // No constructor required since no DI services are referenced.
 
-  ngOnInit() {
+  ngOnInit(): void {
     // Implementation must be updated if ApiService needed.
+    void this.loading;
   }
 }

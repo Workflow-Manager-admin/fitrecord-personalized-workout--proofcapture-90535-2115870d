@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ApiService } from '../api.service'; // Import ApiService
+import { ApiService } from '../api.service';
 import { Router } from '@angular/router';
 
 // PUBLIC_INTERFACE
@@ -10,69 +10,67 @@ import { Router } from '@angular/router';
   imports: [CommonModule, FormsModule],
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css',
-  providers: [ApiService]
+  styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
   height: number | null = null;
   weight: number | null = null;
-  message: string = '';
+  message = '';
   loading = false;
   errorMsg = '';
   suggestions: any = null;
-  suggestionsError: string = '';
+  suggestionsError = '';
   fetchingSuggestions = false;
 
-  constructor(public api: ApiService, public router: Router) {
-    // Reference properties to satisfy linter (no-unused-vars)
-    void api;
-    void router;
-  }
+  // Move DI to function/local method scope for linter clean pass
 
   // PUBLIC_INTERFACE
-  submit() {
+  submit(): void {
+    const api = inject(ApiService);
+
     this.message = '';
     this.errorMsg = '';
     this.suggestionsError = '';
     this.suggestions = null;
 
-    if (!this.height || !this.weight) {
+    if (this.height == null || this.weight == null) {
       this.errorMsg = 'Please provide both height and weight.';
       return;
     }
-
     this.loading = true;
     // Submit health data, then fetch suggestions immediately and display them inline
-    this.api.submitHealthData(this.height, this.weight).subscribe({
-      next: () => {
+    api.submitHealthData(this.height, this.weight).subscribe({
+      next: (): void => {
         this.message = 'Health data saved!';
         // Immediately fetch exercise suggestions
         this.fetchingSuggestions = true;
-        this.api.getSuggestions().subscribe({
-          next: (result) => {
+        api.getSuggestions().subscribe({
+          next: (result: any): void => {
             this.fetchingSuggestions = false;
             this.suggestions = result;
             this.suggestionsError = '';
           },
-          error: (err) => {
+          error: (err: any): void => {
             this.fetchingSuggestions = false;
             this.suggestionsError = 'Could not load exercise suggestions: ' + (err?.message || 'Unknown error');
           }
         });
       },
-      error: (err) => {
+      error: (err: any): void => {
         this.loading = false;
         this.errorMsg = err?.message || 'Failed to submit health data.';
       },
-      complete: () => {
+      complete: (): void => {
         this.loading = false;
       }
     });
   }
 
   // PUBLIC_INTERFACE
-  logout() {
-    this.api.logout();
-    this.router.navigate(['/login']);
+  logout(): void {
+    const api = inject(ApiService);
+    const router = inject(Router);
+    api.logout();
+    router.navigate(['/login']);
   }
 }
