@@ -1,0 +1,4 @@
+.health-container { max-width:420px; margin:2rem auto; background:#f8fafe; padding:2rem; border-radius:10px; text-align:center; }
+.health-ok { color: #26813b; font-weight: bold; }
+.health-bad { color: #d92132; font-weight: bold; }
+.health-container .error { color:#d92132;}

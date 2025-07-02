@@ -1,0 +1,8 @@
+<div class="health-container">
+  <h2>Database Health Status</h2>
+  <div *ngIf="loading">Checking DB status...</div>
+  <div *ngIf="errorMsg" class="error">{{ errorMsg }}</div>
+  <div *ngIf="!loading && status === 'healthy'" class="health-ok">Database is <b>ONLINE</b> ✅</div>
+  <div *ngIf="!loading && status === 'unhealthy'" class="health-bad">Database is <b>OFFLINE</b> ❌</div>
+  <a routerLink="/dashboard">← Back to Dashboard</a>
+</div>

@@ -1,0 +1,21 @@
+.history-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #e9f2fb;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.history-container table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+  margin-top: 1.2rem;
+}
+.history-container th, .history-container td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+.history-container th { background: #b9cbe2;}
+.history-container .error{ color: #d92132;}
+.history-container a { margin-top:1rem; display:inline-block;}

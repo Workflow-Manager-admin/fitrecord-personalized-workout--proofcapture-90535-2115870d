@@ -1,0 +1,12 @@
+<div class="upload-container">
+  <h2>Upload Workout Proof</h2>
+  <input type="file" accept="image/*,video/*" (change)="onFileChange($event)" capture="environment" />
+  <div *ngIf="previewUrl">
+    <img *ngIf="selectedFileType?.startsWith('image/')" [src]="previewUrl" width="220" alt="proof preview">
+    <video *ngIf="selectedFileType?.startsWith('video/')" [src]="previewUrl" width="240" controls></video>
+  </div>
+  <div *ngIf="errorMsg" class="error">{{errorMsg}}</div>
+  <button (click)="onUpload()" [disabled]="uploading">Upload</button>
+  <div *ngIf="uploadMsg" class="success">{{uploadMsg}}</div>
+  <a routerLink="/dashboard">← Back to Dashboard</a>
+</div>

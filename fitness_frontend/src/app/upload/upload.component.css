@@ -1,0 +1,16 @@
+.upload-container {
+  max-width: 430px;
+  margin: 2.5rem auto;
+  background: #f8fafe;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.upload-container img, .upload-container video {
+  margin: 1rem 0;
+  border-radius: 8px;
+  max-width: 100%;
+}
+.upload-container button { background:#ff2465; color:#fff; border:none; border-radius:6px; padding:.7rem 1.2rem; margin:1rem;}
+.upload-container .error { color:#d92132;}
+.upload-container .success{ color:#26813b;}

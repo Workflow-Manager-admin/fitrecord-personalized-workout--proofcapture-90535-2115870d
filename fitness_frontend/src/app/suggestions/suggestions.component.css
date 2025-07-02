@@ -1,0 +1,4 @@
+.sugg-container { max-width:600px; margin:2rem auto; background:#f8fafe; padding:2rem; border-radius:10px;}
+.sugg-container h2 { margin-bottom:1.2rem;}
+.sugg-container pre { background:#eee; padding:.8rem; border-radius:6px;}
+.sugg-container a { margin-top:1rem; display:inline-block;}

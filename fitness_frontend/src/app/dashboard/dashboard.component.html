@@ -1,0 +1,23 @@
+<div class="dash-container">
+  <h2>Welcome!</h2>
+  <form (ngSubmit)="submit()" #f="ngForm">
+    <label>
+      Height (cm):
+      <input type="number" [(ngModel)]="height" name="height" required [min]="30" [max]="300" />
+    </label>
+    <label>
+      Weight (kg):
+      <input type="number" [(ngModel)]="weight" name="weight" required [min]="10" [max]="400" />
+    </label>
+    <button type="submit" [disabled]="loading || !height || !weight">Save Health Data</button>
+    <span *ngIf="message" class="success">{{ message }}</span>
+    <span *ngIf="errorMsg" class="error">{{ errorMsg }}</span>
+  </form>
+  <nav>
+    <a routerLink="/suggestions">Get Exercise Plan</a>
+    <a routerLink="/upload">Upload Workout Proof</a>
+    <a routerLink="/history">View Workout History</a>
+    <a routerLink="/health">View DB Health</a>
+  </nav>
+  <button (click)="logout()">Logout</button>
+</div>
