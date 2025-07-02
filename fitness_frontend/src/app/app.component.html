@@ -1,24 +1,11 @@
 <div class="main-layout">
   <nav class="header-bar" role="navigation">
     <span class="header-title">🏋️ Fitness App</span>
-    <div class="header-links">
-      <a class="header-link" routerLink="/dashboard" routerLinkActive="selected">Dashboard</a>
-      <a class="header-link" routerLink="/suggestions" routerLinkActive="selected">Exercise Plan</a>
-      <a class="header-link" routerLink="/upload" routerLinkActive="selected">Upload Proof</a>
-      <a class="header-link" routerLink="/history" routerLinkActive="selected">History</a>
-      <a class="header-link" routerLink="/health" routerLinkActive="selected">DB Health</a>
-    </div>
+    <!-- Only app title and logo remain; all links removed -->
   </nav>
   <div class="app-main-content-wrap">
-    <aside class="app-sidebar" role="complementary">
-      <div class="sidebar-title">Menu</div>
-      <a class="sidebar-link" routerLink="/dashboard" routerLinkActive="active">🏠 Dashboard</a>
-      <a class="sidebar-link" routerLink="/suggestions" routerLinkActive="active">📝 Plan</a>
-      <a class="sidebar-link" routerLink="/upload" routerLinkActive="active">⬆️ Upload Proof</a>
-      <a class="sidebar-link" routerLink="/history" routerLinkActive="active">📊 History</a>
-      <a class="sidebar-link" routerLink="/health" routerLinkActive="active">💡 DB Health</a>
-    </aside>
-    <main class="app-content">
+    <!-- Sidebar and its menu removed for minimal navbar-only experience -->
+    <main class="app-content" style="width: 100%;">
       <router-outlet></router-outlet>
     </main>
   </div>
