@@ -73,9 +73,23 @@ export class ApiService {
     );
   }
 
-  /** PUBLIC_INTERFACE: Gets personalized exercise suggestions for user. */
+  /** PUBLIC_INTERFACE: Gets personalized exercise suggestions for user (OLD, GET, for legacy only). */
   getSuggestions(): Observable<any> {
+    // This method is kept for backward compatibility, but is not used for new contract.
     return this.http.get<any>(`${this.apiBase}/exercise/suggestion`, { headers: this.getAuthHeaders() });
+  }
+
+  /**
+   * PUBLIC_INTERFACE: Gets personalized exercise suggestions for user (NEW).
+   * Matches backend contract: POST /exercise/suggestion with { height, weight }
+   * and JWT in Authorization header.
+   */
+  getSuggestionsWithPayload(height: number, weight: number): Observable<any> {
+    return this.http.post<any>(
+      `${this.apiBase}/exercise/suggestion`,
+      { height, weight },
+      { headers: this.getAuthHeaders() }
+    );
   }
 
   /** PUBLIC_INTERFACE: Uploads workout proof (image or video). */

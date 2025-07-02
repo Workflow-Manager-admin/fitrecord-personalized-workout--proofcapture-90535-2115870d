@@ -21,14 +21,14 @@ chunk-FZG6XKG7.js    | upload-component      |  12.40 kB |
 chunk-BWFEUQ5E.js    | dashboard-component   |   7.61 kB | 
 chunk-6K4NYQTF.js    | auth-component        |   6.74 kB | 
 chunk-HV3D3DMJ.js    | history-component     |   6.03 kB | 
-chunk-NW22OY3T.js    | suggestions-component |   5.50 kB | 
+chunk-4MOUVEVQ.js    | suggestions-component |   5.50 kB | 
 chunk-KPW3W6AI.js    | health-component      |   4.03 kB | 
 
 
 Server bundles      
 Initial chunk files  | Names                 |  Raw size
 polyfills.server.mjs | polyfills.server      | 572.91 kB | 
-chunk-FLNBVE4Q.mjs   | -                     |   6.40 kB | 
+chunk-6N3FZFXL.mjs   | -                     |   6.40 kB | 
 chunk-SVJAGD5B.mjs   | -                     |   3.69 kB | 
 server.mjs           | server                |   1.45 kB | 
 chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
@@ -39,10 +39,10 @@ chunk-6P6GKQTL.mjs   | upload-component      |  12.44 kB |
 chunk-5A6FMPEF.mjs   | dashboard-component   |   7.65 kB | 
 chunk-U2SQPDOH.mjs   | auth-component        |   6.77 kB | 
 chunk-VQWEYM6G.mjs   | history-component     |   6.07 kB | 
-chunk-M5D5MDXY.mjs   | suggestions-component |   5.54 kB | 
+chunk-VNAG6PKP.mjs   | suggestions-component |   5.54 kB | 
 chunk-JRSUMV6O.mjs   | health-component      |   4.07 kB | 
 
-Application bundle generation complete. [3.116 seconds]
+Application bundle generation complete. [2.928 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -54,21 +54,47 @@ NG02801: Angular detected that `HttpClient` is not configured to use `fetch` API
 Browser bundles    
 Initial chunk files | Names                 |  Raw size
 main.js             | main                  |   5.99 kB | 
+chunk-WAIKHSBD.js   | -                     |   4.07 kB | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-MJGLRGLS.js   | suggestions-component |   5.50 kB | 
+chunk-KXYQTUQX.js   | dashboard-component   |   7.61 kB | 
+chunk-3ZWLTROV.js   | suggestions-component |   5.50 kB | 
 
 
 Server bundles     
 Initial chunk files | Names                 |  Raw size
-chunk-7XYXAGUC.mjs  | -                     |   6.40 kB | 
+chunk-OFWSYHXI.mjs  | -                     |   6.40 kB | 
+chunk-SUXORZNP.mjs  | -                     |   4.10 kB | 
 server.mjs          | server                |   1.45 kB | 
 main.server.mjs     | main.server           | 862 bytes | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-Y7P4Z7IU.mjs  | suggestions-component |   5.54 kB | 
+chunk-LKDVGIGC.mjs  | dashboard-component   |   7.65 kB | 
+chunk-OLKYAYJY.mjs  | suggestions-component |   5.54 kB | 
 
-Application bundle generation complete. [0.990 seconds]
+Application bundle generation complete. [0.675 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names               |  Raw size
+main.js             | main                |   5.99 kB | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-KNXWMHJV.js   | dashboard-component |   7.96 kB | 
+
+
+Server bundles     
+Initial chunk files | Names               |  Raw size
+chunk-ECE2WPQW.mjs  | -                   |   6.40 kB | 
+server.mjs          | server              |   1.45 kB | 
+main.server.mjs     | main.server         | 862 bytes | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-HRUHTHWO.mjs  | dashboard-component |   8.00 kB | 
+
+Application bundle generation complete. [0.385 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
@@ -78,43 +104,40 @@ Initial chunk files | Names                 |  Raw size
 main.js             | main                  |   5.99 kB | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-4MOUVEVQ.js   | suggestions-component |   5.50 kB | 
+chunk-ZE5YR7ZN.js   | suggestions-component |   6.63 kB | 
 
 
 Server bundles     
 Initial chunk files | Names                 |  Raw size
-chunk-6N3FZFXL.mjs  | -                     |   6.40 kB | 
+chunk-BB6EVCAY.mjs  | -                     |   6.40 kB | 
 server.mjs          | server                |   1.45 kB | 
 main.server.mjs     | main.server           | 862 bytes | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-VNAG6PKP.mjs  | suggestions-component |   5.54 kB | 
+chunk-WJROA7TZ.mjs  | suggestions-component |   6.67 kB | 
 
-Application bundle generation complete. [0.235 seconds]
+Application bundle generation complete. [0.399 seconds]
 
 Page reload sent to client(s).
-fatal error: all goroutines are asleep - deadlock!
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names               |  Raw size
+main.js             | main                |   5.99 kB | 
 
-goroutine 1 [chan receive]:
-github.com/evanw/esbuild/internal/helpers.(*ThreadSafeWaitGroup).Wait(...)
-	github.com/evanw/esbuild/internal/helpers/waitgroup.go:36
-main.runService.func2()
-	github.com/evanw/esbuild/cmd/esbuild/service.go:114 +0x51
-main.runService(0x1)
-	github.com/evanw/esbuild/cmd/esbuild/service.go:160 +0x50c
-main.main()
-	github.com/evanw/esbuild/cmd/esbuild/main.go:241 +0x9d9
+Lazy chunk files    | Names               |  Raw size
+chunk-CWHTBT2Y.js   | dashboard-component |   7.96 kB | 
 
-goroutine 7 [chan receive]:
-main.runService.func1()
-	github.com/evanw/esbuild/cmd/esbuild/service.go:98 +0x45
-created by main.runService in goroutine 1
-	github.com/evanw/esbuild/cmd/esbuild/service.go:97 +0x1db
 
-goroutine 8 [chan receive]:
-main.(*serviceType).sendRequest(0xc000182300, {0x986960, 0xc0022ac390})
-	github.com/evanw/esbuild/cmd/esbuild/service.go:192 +0x12b
-main.runService.func3()
-	github.com/evanw/esbuild/cmd/esbuild/service.go:125 +0x3e
-created by main.runService in goroutine 1
-	github.com/evanw/esbuild/cmd/esbuild/service.go:122 +0x30d
+Server bundles     
+Initial chunk files | Names               |  Raw size
+chunk-2EK24YRL.mjs  | -                   |   6.40 kB | 
+server.mjs          | server              |   1.45 kB | 
+main.server.mjs     | main.server         | 862 bytes | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-GHLDYA4I.mjs  | dashboard-component |   8.00 kB | 
+
+Application bundle generation complete. [0.329 seconds]
+
+Page reload sent to client(s).

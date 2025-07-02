@@ -4,13 +4,11 @@ import { ApiService } from '../api.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
-
-
 /**
  * SuggestionsComponent
  * Displays the latest personalized exercise plan for the user.
  * Whenever navigated to, fetches suggestions so data is always up-to-date after health data submission.
- * Handles backend/network/4xx/5xx/empty result errors gracefully and displays helpful messages.
+ * Matches backend contract: POSTs height/weight payload if present (from localStorage after dashboard submit).
  */
 // PUBLIC_INTERFACE
 @Component({
@@ -24,6 +22,8 @@ export class SuggestionsComponent {
   loading = true;
   errorMsg = '';
   routine: any = null;
+  height: number | null = null;
+  weight: number | null = null;
   private api = inject(ApiService);
   private router = inject(Router);
 
@@ -32,8 +32,6 @@ export class SuggestionsComponent {
     this.router.events
       .pipe(filter(e => e instanceof NavigationEnd))
       .subscribe(() => {
-        // Optionally check if navigation state has afterHealthSaved parameter,
-        // and always force refetch.
         this.refreshSuggestions();
       });
     // Also fetch once when component is constructed (browser refresh/direct entry).
@@ -42,18 +40,51 @@ export class SuggestionsComponent {
 
   /**
    * PUBLIC_INTERFACE
+   * Fetches health data from localStorage if present.
+   */
+  getLocalHealthData(): { height: number | null; weight: number | null } {
+    try {
+      const heightStr = typeof window !== 'undefined' && globalThis.window && globalThis.window.localStorage
+        ? globalThis.window.localStorage.getItem('lastSubmittedHeight')
+        : null;
+      const weightStr = typeof window !== 'undefined' && globalThis.window && globalThis.window.localStorage
+        ? globalThis.window.localStorage.getItem('lastSubmittedWeight')
+        : null;
+      return {
+        height: heightStr ? Number(heightStr) : null,
+        weight: weightStr ? Number(weightStr) : null
+      };
+    } catch {
+      return { height: null, weight: null };
+    }
+  }
+
+  /**
+   * PUBLIC_INTERFACE
    * Fetches latest personalized exercise suggestions based on latest submitted health data.
    * Shows user-friendly error if backend/network error or empty result.
+   * Ensures the payload sent matches backend contract (POST with height/weight, not GET).
    */
   refreshSuggestions() {
     this.loading = true;
     this.errorMsg = '';
     this.routine = null;
 
-    // Force a fresh pull from API (do NOT cache). Always displays up-to-date routine.
-    this.api.getSuggestions().subscribe({
+    // Get height/weight from storage or null
+    const data = this.getLocalHealthData();
+    this.height = data.height;
+    this.weight = data.weight;
+
+    // If height/weight are not present, show error before making backend call.
+    if (!this.height || !this.weight) {
+      this.errorMsg = 'Please enter your height and weight in the dashboard first.';
+      this.loading = false;
+      return;
+    }
+
+    // Call the correct backend endpoint with required payload (POST /exercise/suggestion with {height, weight})
+    this.api.getSuggestionsWithPayload(this.height, this.weight).subscribe({
       next: (res: any) => {
-        // Consider null, empty object/array, or status fields as "no result"
         if (
           !res ||
           (Array.isArray(res) && res.length === 0) ||
@@ -62,7 +93,6 @@ export class SuggestionsComponent {
           this.errorMsg = 'No exercise suggestions found for the provided data.';
           this.routine = null;
         } else if (res.error || res.status === 'error' || res.statusCode >= 400) {
-          // Some APIs can wrap error in response body even on 200 OK
           this.errorMsg = res.message || 'Could not fetch exercises. Please try again later.';
           this.routine = null;
         } else {
@@ -75,7 +105,6 @@ export class SuggestionsComponent {
         if (err && err.status === 404) {
           this.errorMsg = 'No exercise suggestions found for the provided data.';
         } else if (err && (err.status === 0 || err.status >= 500)) {
-          // 0 = network error, >=500 = server
           this.errorMsg = 'Could not fetch exercises. Please try again later.';
         } else if (err && err.error && typeof err.error === 'string') {
           this.errorMsg = err.error;

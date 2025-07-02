@@ -43,6 +43,15 @@ export class DashboardComponent {
 
     this.api.submitHealthData(this.height, this.weight).subscribe({
       next: (): void => {
+        // Store last submitted height/weight to localStorage for suggestions
+        try {
+          if (typeof window !== 'undefined' && globalThis.window && globalThis.window.localStorage) {
+            globalThis.window.localStorage.setItem('lastSubmittedHeight', String(this.height));
+            globalThis.window.localStorage.setItem('lastSubmittedWeight', String(this.weight));
+          }
+        } catch {
+          // Intentionally empty: localStorage may not be available, safe to ignore.
+        }
         // After saving health data, go to /suggestions AND force component reload.
         // Route to /suggestions using a unique state to hint for forced refresh.
         // This is a robust workaround for Angular's route reuse quirks.
