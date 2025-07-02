@@ -19,8 +19,8 @@ chunk-VTZCDIGA.js    | -                     |   1.31 kB |
 Lazy chunk files     | Names                 |  Raw size
 chunk-FZG6XKG7.js    | upload-component      |  12.40 kB | 
 chunk-CWHTBT2Y.js    | dashboard-component   |   7.96 kB | 
+chunk-V2KY5GHF.js    | suggestions-component |   7.24 kB | 
 chunk-6K4NYQTF.js    | auth-component        |   6.74 kB | 
-chunk-ZE5YR7ZN.js    | suggestions-component |   6.63 kB | 
 chunk-HV3D3DMJ.js    | history-component     |   6.03 kB | 
 chunk-KPW3W6AI.js    | health-component      |   4.03 kB | 
 
@@ -28,7 +28,7 @@ chunk-KPW3W6AI.js    | health-component      |   4.03 kB |
 Server bundles      
 Initial chunk files  | Names                 |  Raw size
 polyfills.server.mjs | polyfills.server      | 572.91 kB | 
-chunk-2EK24YRL.mjs   | -                     |   6.40 kB | 
+chunk-62QZZP6I.mjs   | -                     |   6.40 kB | 
 chunk-SUXORZNP.mjs   | -                     |   4.10 kB | 
 server.mjs           | server                |   1.45 kB | 
 chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
@@ -37,12 +37,12 @@ main.server.mjs      | main.server           | 862 bytes |
 Lazy chunk files     | Names                 |  Raw size
 chunk-6P6GKQTL.mjs   | upload-component      |  12.44 kB | 
 chunk-GHLDYA4I.mjs   | dashboard-component   |   8.00 kB | 
+chunk-BX6GTGGF.mjs   | suggestions-component |   7.28 kB | 
 chunk-U2SQPDOH.mjs   | auth-component        |   6.77 kB | 
-chunk-WJROA7TZ.mjs   | suggestions-component |   6.67 kB | 
 chunk-VQWEYM6G.mjs   | history-component     |   6.07 kB | 
 chunk-JRSUMV6O.mjs   | health-component      |   4.07 kB | 
 
-Application bundle generation complete. [3.024 seconds]
+Application bundle generation complete. [3.143 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -56,45 +56,18 @@ Initial chunk files | Names                 |  Raw size
 main.js             | main                  |   5.99 kB | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-V2KY5GHF.js   | suggestions-component |   7.24 kB | 
+chunk-3BPCYRJC.js   | suggestions-component |   7.88 kB | 
 
 
 Server bundles     
 Initial chunk files | Names                 |  Raw size
-chunk-62QZZP6I.mjs  | -                     |   6.40 kB | 
+chunk-TIXC3Y34.mjs  | -                     |   6.40 kB | 
 server.mjs          | server                |   1.45 kB | 
 main.server.mjs     | main.server           | 862 bytes | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-BX6GTGGF.mjs  | suggestions-component |   7.28 kB | 
+chunk-A3PXG72H.mjs  | suggestions-component |   7.92 kB | 
 
-Application bundle generation complete. [1.109 seconds]
+Application bundle generation complete. [0.774 seconds]
 
 Page reload sent to client(s).
-2:16:11 PM [vite] Internal server error: ɵgetOrCreateAngularServerApp is not a function
-      at /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/build/src/tools/vite/middlewares/ssr-middleware.js:30:38
-fatal error: all goroutines are asleep - deadlock!
-
-goroutine 1 [chan receive]:
-github.com/evanw/esbuild/internal/helpers.(*ThreadSafeWaitGroup).Wait(...)
-	github.com/evanw/esbuild/internal/helpers/waitgroup.go:36
-main.runService.func2()
-	github.com/evanw/esbuild/cmd/esbuild/service.go:114 +0x51
-main.runService(0x1)
-	github.com/evanw/esbuild/cmd/esbuild/service.go:160 +0x50c
-main.main()
-	github.com/evanw/esbuild/cmd/esbuild/main.go:241 +0x9d9
-
-goroutine 19 [chan receive]:
-main.runService.func1()
-	github.com/evanw/esbuild/cmd/esbuild/service.go:98 +0x45
-created by main.runService in goroutine 1
-	github.com/evanw/esbuild/cmd/esbuild/service.go:97 +0x1db
-
-goroutine 20 [chan receive]:
-main.(*serviceType).sendRequest(0xc0001942d0, {0x986960, 0xc00139a660})
-	github.com/evanw/esbuild/cmd/esbuild/service.go:192 +0x12b
-main.runService.func3()
-	github.com/evanw/esbuild/cmd/esbuild/service.go:125 +0x3e
-created by main.runService in goroutine 1
-	github.com/evanw/esbuild/cmd/esbuild/service.go:122 +0x30d

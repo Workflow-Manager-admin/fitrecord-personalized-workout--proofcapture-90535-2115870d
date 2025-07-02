@@ -82,7 +82,7 @@ export class SuggestionsComponent {
       return;
     }
 
-    // Debug: log outgoing request details (remove in production)
+    // --------- Enhanced debug & error logging ---------
     const debugPayload = { height: this.height, weight: this.weight };
     let debugHeaders: any = {};
     try {
@@ -90,19 +90,25 @@ export class SuggestionsComponent {
     } catch (err) {
       console.warn('Could not get auth headers:', err);
     }
-    console.debug(
-      '[SuggestionsComponent] Requesting exercise suggestions...',
-      {
-        url: 'POST /exercise/suggestion',
-        payload: debugPayload,
-        headers: debugHeaders,
-      }
-    );
+    const debugEndpoint = (this.api as any).apiBase
+      ? ((this.api as any).apiBase + '/exercise/suggestion')
+      : 'POST /exercise/suggestion';
 
-    // Call the correct backend endpoint with required payload (POST /exercise/suggestion with {height, weight})
+    // Detailed log before request
+    // eslint-disable-next-line no-console
+    console.log('[SuggestionsComponent] Outgoing request to exercise suggestion API', {
+      method: 'POST',
+      endpoint: debugEndpoint,
+      payload: debugPayload,
+      headers: debugHeaders,
+    });
+
+    // Issue the backend call
     this.api.getSuggestionsWithPayload(this.height, this.weight).subscribe({
       next: (res: any) => {
-        console.debug('[SuggestionsComponent] Response from /exercise/suggestion:', res);
+        // Full response debug log
+        // eslint-disable-next-line no-console
+        console.log('[SuggestionsComponent] Response from /exercise/suggestion:', res);
         if (
           !res ||
           (Array.isArray(res) && res.length === 0) ||
@@ -120,16 +126,32 @@ export class SuggestionsComponent {
         this.loading = false;
       },
       error: (err: any) => {
-        // Debug: log full error object
-        console.error('[SuggestionsComponent] Error response from /exercise/suggestion:', err);
-        if (err && err.status === 404) {
-          this.errorMsg = 'No exercise suggestions found for the provided data.';
-        } else if (err && (err.status === 0 || err.status >= 500)) {
-          this.errorMsg = 'Could not fetch exercises. Please try again later.';
-        } else if (err && err.error && typeof err.error === 'string') {
-          this.errorMsg = err.error;
+        // Capture and log the outgoing request and the full error object from backend
+        // eslint-disable-next-line no-console
+        console.error('[SuggestionsComponent] Error response from /exercise/suggestion:', {
+          endpoint: debugEndpoint,
+          payload: debugPayload,
+          headers: debugHeaders,
+          errorObj: err,
+          status: err?.status,
+          backendMessage: err?.error?.message || err?.error || err?.message,
+        });
+
+        // Also display the backend's error to the user, if present
+        let backendError = '';
+        if (err && typeof err.error === 'object' && err.error && err.error.message) {
+          backendError = err.error.message;
+        } else if (err && typeof err.error === 'string') {
+          backendError = err.error;
         } else if (err && err.message) {
-          this.errorMsg = 'Could not fetch exercises: ' + err.message;
+          backendError = err.message;
+        }
+        if (err && err.status === 404) {
+          this.errorMsg = backendError || 'No exercise suggestions found for the provided data.';
+        } else if (err && (err.status === 0 || err.status >= 500)) {
+          this.errorMsg = backendError || 'Could not fetch exercises. Please try again later.';
+        } else if (backendError) {
+          this.errorMsg = 'Could not fetch exercises: ' + backendError;
         } else {
           this.errorMsg = 'Could not fetch exercises. Please try again later.';
         }
