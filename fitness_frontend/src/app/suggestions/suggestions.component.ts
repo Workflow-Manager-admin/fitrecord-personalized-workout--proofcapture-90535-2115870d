@@ -1,7 +1,14 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ApiService } from '../api.service';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
+/**
+ * SuggestionsComponent
+ * Displays the latest personalized exercise plan for the user.
+ * Whenever navigated to, fetches suggestions so data is always up-to-date after health data submission.
+ */
 // PUBLIC_INTERFACE
 @Component({
   standalone: true,
@@ -10,22 +17,30 @@ import { ApiService } from '../api.service';
   templateUrl: './suggestions.component.html',
   styleUrl: './suggestions.component.css'
 })
-export class SuggestionsComponent implements OnInit {
+export class SuggestionsComponent {
   loading = true;
   errorMsg = '';
   routine: any = null;
+  private api = inject(ApiService);
+  private router = inject(Router);
 
-  /**
-   * On init, fetch the personalized exercise suggestions from backend API.
-   * This uses the user's latest submitted height and weight.
-   */
-  ngOnInit(): void {
-    const api = inject(ApiService);
+  constructor() {
+    // Subscribe to router events so when the user routes to /suggestions,
+    // fetch the latest suggestions. (Works for both direct navigation and redirect from dashboard.)
+    this.router.events
+      .pipe(filter(e => e instanceof NavigationEnd))
+      .subscribe(() => this.refreshSuggestions());
+    // Also fetch on component creation (for browser refresh/direct load).
+    this.refreshSuggestions();
+  }
+
+  /** Fetches latest personalized exercise suggestions based on latest submitted health data. */
+  refreshSuggestions() {
     this.loading = true;
     this.errorMsg = '';
     this.routine = null;
 
-    api.getSuggestions().subscribe({
+    this.api.getSuggestions().subscribe({
       next: (res: any) => {
         this.routine = res;
         this.errorMsg = '';

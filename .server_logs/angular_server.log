@@ -18,183 +18,17 @@ chunk-VTZCDIGA.js    | -                     |   1.31 kB |
 
 Lazy chunk files     | Names                 |  Raw size
 chunk-D3CGBGY4.js    | upload-component      |  11.86 kB | 
-chunk-6GCDZ7K7.js    | dashboard-component   |  10.64 kB | 
-chunk-DXAFZXYV.js    | auth-component        |   6.62 kB | 
-chunk-HV3D3DMJ.js    | history-component     |   6.03 kB | 
-chunk-KPW3W6AI.js    | health-component      |   4.03 kB | 
-chunk-6F5XSOLG.js    | suggestions-component |   3.58 kB | 
-
-
-Server bundles      
-Initial chunk files  | Names                 |  Raw size
-polyfills.server.mjs | polyfills.server      | 572.91 kB | 
-chunk-VPXGTNCA.mjs   | -                     |   6.40 kB | 
-chunk-SVJAGD5B.mjs   | -                     |   3.69 kB | 
-server.mjs           | server                |   1.45 kB | 
-chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
-main.server.mjs      | main.server           | 862 bytes | 
-
-Lazy chunk files     | Names                 |  Raw size
-chunk-WVFGOOIE.mjs   | upload-component      |  11.89 kB | 
-chunk-3ICTRO73.mjs   | dashboard-component   |  10.68 kB | 
-chunk-F5YGBZA7.mjs   | auth-component        |   6.66 kB | 
-chunk-VQWEYM6G.mjs   | history-component     |   6.07 kB | 
-chunk-JRSUMV6O.mjs   | health-component      |   4.07 kB | 
-chunk-Q5Y4CSEQ.mjs   | suggestions-component |   3.62 kB | 
-
-Application bundle generation complete. [3.001 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:3000/
-  ➜  Network: http://172.17.0.2:3000/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                 |  Raw size
-polyfills.js         | polyfills             |  90.20 kB | 
-main.js              | main                  |   5.99 kB | 
-styles.css           | styles                |   4.78 kB | 
-chunk-ULWSWZZY.js    | -                     |   3.66 kB | 
-chunk-VTZCDIGA.js    | -                     |   1.31 kB | 
-
-                     | Initial total         | 105.93 kB
-
-Lazy chunk files     | Names                 |  Raw size
-chunk-D3CGBGY4.js    | upload-component      |  11.86 kB | 
-chunk-6GCDZ7K7.js    | dashboard-component   |  10.64 kB | 
-chunk-DXAFZXYV.js    | auth-component        |   6.62 kB | 
-chunk-HV3D3DMJ.js    | history-component     |   6.03 kB | 
-chunk-KPW3W6AI.js    | health-component      |   4.03 kB | 
-chunk-6F5XSOLG.js    | suggestions-component |   3.58 kB | 
-
-
-Server bundles      
-Initial chunk files  | Names                 |  Raw size
-polyfills.server.mjs | polyfills.server      | 572.91 kB | 
-chunk-VPXGTNCA.mjs   | -                     |   6.40 kB | 
-chunk-SVJAGD5B.mjs   | -                     |   3.69 kB | 
-server.mjs           | server                |   1.45 kB | 
-chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
-main.server.mjs      | main.server           | 862 bytes | 
-
-Lazy chunk files     | Names                 |  Raw size
-chunk-WVFGOOIE.mjs   | upload-component      |  11.89 kB | 
-chunk-3ICTRO73.mjs   | dashboard-component   |  10.68 kB | 
-chunk-F5YGBZA7.mjs   | auth-component        |   6.66 kB | 
-chunk-VQWEYM6G.mjs   | history-component     |   6.07 kB | 
-chunk-JRSUMV6O.mjs   | health-component      |   4.07 kB | 
-chunk-Q5Y4CSEQ.mjs   | suggestions-component |   3.62 kB | 
-
-Application bundle generation complete. [0.963 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.427 seconds]
-
-✘ [ERROR] NG9: Property 'fetchingSuggestions' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
-
-    src/app/dashboard/dashboard.component.html:18:14:
-      18 │   <div *ngIf="fetchingSuggestions" style="margin-top: 1.2rem;">
-         ╵               ~~~~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component DashboardComponent.
-
-    src/app/dashboard/dashboard.component.ts:16:15:
-      16 │   templateUrl: './dashboard.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG9: Property 'suggestionsError' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
-
-    src/app/dashboard/dashboard.component.html:21:14:
-      21 │   <div *ngIf="suggestionsError" class="error" style="margin-top: 1...
-         ╵               ~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component DashboardComponent.
-
-    src/app/dashboard/dashboard.component.ts:16:15:
-      16 │   templateUrl: './dashboard.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG9: Property 'suggestionsError' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
-
-    src/app/dashboard/dashboard.component.html:22:7:
-      22 │     {{ suggestionsError }}
-         ╵        ~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component DashboardComponent.
-
-    src/app/dashboard/dashboard.component.ts:16:15:
-      16 │   templateUrl: './dashboard.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG9: Property 'suggestions' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
-
-    src/app/dashboard/dashboard.component.html:24:14:
-      24 │   <div *ngIf="suggestions && !fetchingSuggestions" style="margin-t...
-         ╵               ~~~~~~~~~~~
-
-  Error occurs in the template of component DashboardComponent.
-
-    src/app/dashboard/dashboard.component.ts:16:15:
-      16 │   templateUrl: './dashboard.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG9: Property 'fetchingSuggestions' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
-
-    src/app/dashboard/dashboard.component.html:24:30:
-      24 │ ...ngIf="suggestions && !fetchingSuggestions" style="margin-top: 1...
-         ╵                          ~~~~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component DashboardComponent.
-
-    src/app/dashboard/dashboard.component.ts:16:15:
-      16 │   templateUrl: './dashboard.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG9: Property 'suggestions' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
-
-    src/app/dashboard/dashboard.component.html:26:16:
-      26 │     <pre *ngIf="suggestions | json as json">
-         ╵                 ~~~~~~~~~~~
-
-  Error occurs in the template of component DashboardComponent.
-
-    src/app/dashboard/dashboard.component.ts:16:15:
-      16 │   templateUrl: './dashboard.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                 |  Raw size
-polyfills.js         | polyfills             |  90.20 kB | 
-main.js              | main                  |   5.99 kB | 
-styles.css           | styles                |   4.78 kB | 
-chunk-ULWSWZZY.js    | -                     |   3.66 kB | 
-chunk-VTZCDIGA.js    | -                     |   1.31 kB | 
-
-                     | Initial total         | 105.93 kB
-
-Lazy chunk files     | Names                 |  Raw size
-chunk-D3CGBGY4.js    | upload-component      |  11.86 kB | 
 chunk-GMZFVA5W.js    | dashboard-component   |   7.26 kB | 
 chunk-DXAFZXYV.js    | auth-component        |   6.62 kB | 
 chunk-HV3D3DMJ.js    | history-component     |   6.03 kB | 
+chunk-OHTKLSZL.js    | suggestions-component |   4.14 kB | 
 chunk-KPW3W6AI.js    | health-component      |   4.03 kB | 
-chunk-6F5XSOLG.js    | suggestions-component |   3.58 kB | 
 
 
 Server bundles      
 Initial chunk files  | Names                 |  Raw size
 polyfills.server.mjs | polyfills.server      | 572.91 kB | 
-chunk-SJRME6WC.mjs   | -                     |   6.40 kB | 
+chunk-OTPTZXOM.mjs   | -                     |   6.40 kB | 
 chunk-SVJAGD5B.mjs   | -                     |   3.69 kB | 
 server.mjs           | server                |   1.45 kB | 
 chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
@@ -205,12 +39,15 @@ chunk-WVFGOOIE.mjs   | upload-component      |  11.89 kB |
 chunk-YIRPHNVF.mjs   | dashboard-component   |   7.30 kB | 
 chunk-F5YGBZA7.mjs   | auth-component        |   6.66 kB | 
 chunk-VQWEYM6G.mjs   | history-component     |   6.07 kB | 
+chunk-KS5IACOY.mjs   | suggestions-component |   4.17 kB | 
 chunk-JRSUMV6O.mjs   | health-component      |   4.07 kB | 
-chunk-Q5Y4CSEQ.mjs   | suggestions-component |   3.62 kB | 
 
-Application bundle generation complete. [0.249 seconds]
+Application bundle generation complete. [3.030 seconds]
 
-Page reload sent to client(s).
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
@@ -218,19 +55,19 @@ Initial chunk files | Names                 |  Raw size
 main.js             | main                  |   5.99 kB | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-OHTKLSZL.js   | suggestions-component |   4.14 kB | 
+chunk-BKQSJ4UJ.js   | suggestions-component |   4.38 kB | 
 
 
 Server bundles     
 Initial chunk files | Names                 |  Raw size
-chunk-OTPTZXOM.mjs  | -                     |   6.40 kB | 
+chunk-X5P3VM4R.mjs  | -                     |   6.40 kB | 
 server.mjs          | server                |   1.45 kB | 
 main.server.mjs     | main.server           | 862 bytes | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-KS5IACOY.mjs  | suggestions-component |   4.17 kB | 
+chunk-RH5AOHMQ.mjs  | suggestions-component |   4.42 kB | 
 
-Application bundle generation complete. [0.526 seconds]
+Application bundle generation complete. [0.804 seconds]
 
 Page reload sent to client(s).
 fatal error: all goroutines are asleep - deadlock!
@@ -245,14 +82,14 @@ main.runService(0x1)
 main.main()
 	github.com/evanw/esbuild/cmd/esbuild/main.go:241 +0x9d9
 
-goroutine 19 [chan receive]:
+goroutine 7 [chan receive]:
 main.runService.func1()
 	github.com/evanw/esbuild/cmd/esbuild/service.go:98 +0x45
 created by main.runService in goroutine 1
 	github.com/evanw/esbuild/cmd/esbuild/service.go:97 +0x1db
 
-goroutine 20 [chan receive]:
-main.(*serviceType).sendRequest(0xc0001942d0, {0x986960, 0xc0016787b0})
+goroutine 17 [chan receive]:
+main.(*serviceType).sendRequest(0xc000182300, {0x986960, 0xc000e441b0})
 	github.com/evanw/esbuild/cmd/esbuild/service.go:192 +0x12b
 main.runService.func3()
 	github.com/evanw/esbuild/cmd/esbuild/service.go:125 +0x3e
