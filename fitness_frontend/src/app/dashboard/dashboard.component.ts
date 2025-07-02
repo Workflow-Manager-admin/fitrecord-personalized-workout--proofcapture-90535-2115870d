@@ -4,6 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { ApiService } from '../api.service';
 import { Router } from '@angular/router';
 
+/**
+ * Dashboard page for entering height/weight, saving health data, and
+ * routing to exercise suggestions upon successful save.
+ */
 // PUBLIC_INTERFACE
 @Component({
   standalone: true,
@@ -18,43 +22,25 @@ export class DashboardComponent {
   message = '';
   loading = false;
   errorMsg = '';
-  suggestions: any = null;
-  suggestionsError = '';
-  fetchingSuggestions = false;
-
-  // Move DI to function/local method scope for linter clean pass
 
   // PUBLIC_INTERFACE
   submit(): void {
     const api = inject(ApiService);
+    const router = inject(Router);
 
     this.message = '';
     this.errorMsg = '';
-    this.suggestionsError = '';
-    this.suggestions = null;
 
     if (this.height == null || this.weight == null) {
       this.errorMsg = 'Please provide both height and weight.';
       return;
     }
     this.loading = true;
-    // Submit health data, then fetch suggestions immediately and display them inline
+
     api.submitHealthData(this.height, this.weight).subscribe({
       next: (): void => {
-        this.message = 'Health data saved!';
-        // Immediately fetch exercise suggestions
-        this.fetchingSuggestions = true;
-        api.getSuggestions().subscribe({
-          next: (result: any): void => {
-            this.fetchingSuggestions = false;
-            this.suggestions = result;
-            this.suggestionsError = '';
-          },
-          error: (err: any): void => {
-            this.fetchingSuggestions = false;
-            this.suggestionsError = 'Could not load exercise suggestions: ' + (err?.message || 'Unknown error');
-          }
-        });
+        // After saving health data, automatically go to suggestions page to see personalized plan.
+        router.navigate(['/suggestions']);
       },
       error: (err: any): void => {
         this.loading = false;

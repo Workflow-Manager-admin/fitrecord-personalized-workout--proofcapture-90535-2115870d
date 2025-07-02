@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ApiService } from '../api.service';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -14,10 +15,26 @@ export class SuggestionsComponent implements OnInit {
   errorMsg = '';
   routine: any = null;
 
-  // No constructor required since no DI services are referenced.
-
+  /**
+   * On init, fetch the personalized exercise suggestions from backend API.
+   * This uses the user's latest submitted height and weight.
+   */
   ngOnInit(): void {
-    // Implementation must be updated if ApiService needed.
-    void this.loading;
+    const api = inject(ApiService);
+    this.loading = true;
+    this.errorMsg = '';
+    this.routine = null;
+
+    api.getSuggestions().subscribe({
+      next: (res: any) => {
+        this.routine = res;
+        this.errorMsg = '';
+        this.loading = false;
+      },
+      error: (err: any) => {
+        this.errorMsg = 'Could not load exercise suggestions: ' + (err?.message || 'Unknown error');
+        this.loading = false;
+      }
+    });
   }
 }
