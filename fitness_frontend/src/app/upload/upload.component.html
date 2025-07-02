@@ -1,12 +1,45 @@
 <div class="upload-container">
   <h2>Upload Workout Proof</h2>
-  <button (click)="enableCamera()" [disabled]="isCameraEnabled || isRecording" *ngIf="!isCameraEnabled">Record from Camera</button>
+  <button
+    (click)="enableCamera()"
+    [disabled]="isCameraEnabled || isRecording"
+    *ngIf="!isCameraEnabled"
+    class="btn"
+    aria-label="Enable camera to record workout"
+    type="button"
+  >
+    Record from Camera
+  </button>
   <div *ngIf="isCameraEnabled">
     <video #videoEl autoplay playsinline muted [srcObject]="videoStream" [style.width.px]="260" style="margin:1rem auto;display:block;background:#111; border-radius:10px;"></video>
     <div>
-      <button (click)="startRecording()" [disabled]="isRecording">Start Recording</button>
-      <button (click)="stopRecording()" [disabled]="!isRecording">Stop Recording</button>
-      <button (click)="stopCamera()" [disabled]="isRecording">Close Camera</button>
+      <button
+        (click)="startRecording()"
+        [disabled]="isRecording"
+        class="btn"
+        aria-label="Start recording video"
+        type="button"
+      >
+        Start Recording
+      </button>
+      <button
+        (click)="stopRecording()"
+        [disabled]="!isRecording"
+        class="btn"
+        aria-label="Stop recording video"
+        type="button"
+      >
+        Stop Recording
+      </button>
+      <button
+        (click)="stopCamera()"
+        [disabled]="isRecording"
+        class="btn"
+        aria-label="Close camera"
+        type="button"
+      >
+        Close Camera
+      </button>
     </div>
     <div *ngIf="isRecording" style="color:#ff2465;font-weight:bold; margin-top:.45rem;">
       ● Recording...
@@ -17,7 +50,15 @@
     <div>Preview: Recently recorded video.</div>
   </div>
   <div *ngIf="errorMsg" class="error">{{errorMsg}}</div>
-  <button (click)="onUpload()" [disabled]="uploading || isRecording">Upload</button>
+  <button
+    (click)="onUpload()"
+    [disabled]="uploading || isRecording"
+    class="btn"
+    aria-label="Upload recorded workout proof"
+    type="button"
+  >
+    Upload
+  </button>
   <div *ngIf="uploadMsg" class="success">{{uploadMsg}}</div>
   <a routerLink="/dashboard">← Back to Dashboard</a>
 </div>

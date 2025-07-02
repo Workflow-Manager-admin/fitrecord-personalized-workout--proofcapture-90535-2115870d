@@ -21,14 +21,14 @@ chunk-D3CGBGY4.js    | upload-component      |  11.86 kB |
 chunk-GMZFVA5W.js    | dashboard-component   |   7.26 kB | 
 chunk-DXAFZXYV.js    | auth-component        |   6.62 kB | 
 chunk-HV3D3DMJ.js    | history-component     |   6.03 kB | 
-chunk-BKQSJ4UJ.js    | suggestions-component |   4.38 kB | 
+chunk-R6GMXIFM.js    | suggestions-component |   5.49 kB | 
 chunk-KPW3W6AI.js    | health-component      |   4.03 kB | 
 
 
 Server bundles      
 Initial chunk files  | Names                 |  Raw size
 polyfills.server.mjs | polyfills.server      | 572.91 kB | 
-chunk-X5P3VM4R.mjs   | -                     |   6.40 kB | 
+chunk-MXCQWWTM.mjs   | -                     |   6.40 kB | 
 chunk-SVJAGD5B.mjs   | -                     |   3.69 kB | 
 server.mjs           | server                |   1.45 kB | 
 chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
@@ -39,37 +39,155 @@ chunk-WVFGOOIE.mjs   | upload-component      |  11.89 kB |
 chunk-YIRPHNVF.mjs   | dashboard-component   |   7.30 kB | 
 chunk-F5YGBZA7.mjs   | auth-component        |   6.66 kB | 
 chunk-VQWEYM6G.mjs   | history-component     |   6.07 kB | 
-chunk-RH5AOHMQ.mjs   | suggestions-component |   4.42 kB | 
+chunk-74VW6GMK.mjs   | suggestions-component |   5.53 kB | 
 chunk-JRSUMV6O.mjs   | health-component      |   4.07 kB | 
 
-Application bundle generation complete. [3.007 seconds]
+Application bundle generation complete. [3.017 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
-1:59:44 PM [vite] (client) Re-optimizing dependencies because vite config has changed
-1:59:44 PM [vite] (ssr) Re-optimizing dependencies because vite config has changed
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                 |  Raw size
-main.js             | main                  |   5.99 kB | 
+Application bundle generation failed. [1.104 seconds]
 
-Lazy chunk files    | Names                 |  Raw size
-chunk-R6GMXIFM.js   | suggestions-component |   5.49 kB | 
+✘ [ERROR] NG8002: Can't bind to 'aria-label' since it isn't a known property of 'button'. [plugin angular-compiler]
+
+    src/app/auth/auth.component.html:25:6:
+      25 │       aria-label="{{ mode === 'login' ? 'Log in' : 'Register an ac...
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AuthComponent.
+
+    src/app/auth/auth.component.ts:10:15:
+      10 │   templateUrl: './auth.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Server bundles     
-Initial chunk files | Names                 |  Raw size
-chunk-MXCQWWTM.mjs  | -                     |   6.40 kB | 
-server.mjs          | server                |   1.45 kB | 
-main.server.mjs     | main.server           | 862 bytes | 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.348 seconds]
 
-Lazy chunk files    | Names                 |  Raw size
-chunk-74VW6GMK.mjs  | suggestions-component |   5.53 kB | 
+✘ [ERROR] NG8002: Can't bind to 'aria-label' since it isn't a known property of 'button'. [plugin angular-compiler]
 
-Application bundle generation complete. [0.934 seconds]
+    src/app/auth/auth.component.html:25:6:
+      25 │       aria-label="{{ mode === 'login' ? 'Log in' : 'Register an ac...
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AuthComponent.
+
+    src/app/auth/auth.component.ts:10:15:
+      10 │   templateUrl: './auth.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.212 seconds]
+
+✘ [ERROR] NG8002: Can't bind to 'aria-label' since it isn't a known property of 'button'. [plugin angular-compiler]
+
+    src/app/auth/auth.component.html:25:6:
+      25 │       aria-label="{{ mode === 'login' ? 'Log in' : 'Register an ac...
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AuthComponent.
+
+    src/app/auth/auth.component.ts:10:15:
+      10 │   templateUrl: './auth.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.435 seconds]
+
+✘ [ERROR] NG8002: Can't bind to 'aria-label' since it isn't a known property of 'button'. [plugin angular-compiler]
+
+    src/app/auth/auth.component.html:25:6:
+      25 │       aria-label="{{ mode === 'login' ? 'Log in' : 'Register an ac...
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AuthComponent.
+
+    src/app/auth/auth.component.ts:10:15:
+      10 │   templateUrl: './auth.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.312 seconds]
+
+✘ [ERROR] NG8002: Can't bind to 'aria-label' since it isn't a known property of 'button'. [plugin angular-compiler]
+
+    src/app/auth/auth.component.html:25:6:
+      25 │       aria-label="{{ mode === 'login' ? 'Log in' : 'Register an ac...
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AuthComponent.
+
+    src/app/auth/auth.component.ts:10:15:
+      10 │   templateUrl: './auth.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.225 seconds]
+
+✘ [ERROR] NG8002: Can't bind to 'aria-label' since it isn't a known property of 'button'. [plugin angular-compiler]
+
+    src/app/auth/auth.component.html:25:6:
+      25 │       aria-label="{{ mode === 'login' ? 'Log in' : 'Register an ac...
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AuthComponent.
+
+    src/app/auth/auth.component.ts:10:15:
+      10 │   templateUrl: './auth.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                 |  Raw size
+polyfills.js         | polyfills             |  90.20 kB | 
+main.js              | main                  |   5.99 kB | 
+styles.css           | styles                |   4.78 kB | 
+chunk-ULWSWZZY.js    | -                     |   3.66 kB | 
+chunk-VTZCDIGA.js    | -                     |   1.31 kB | 
+
+                     | Initial total         | 105.93 kB
+
+Lazy chunk files     | Names                 |  Raw size
+chunk-FZG6XKG7.js    | upload-component      |  12.40 kB | 
+chunk-VDOVAMBD.js    | dashboard-component   |   7.36 kB | 
+chunk-6K4NYQTF.js    | auth-component        |   6.74 kB | 
+chunk-HV3D3DMJ.js    | history-component     |   6.03 kB | 
+chunk-R6GMXIFM.js    | suggestions-component |   5.49 kB | 
+chunk-KPW3W6AI.js    | health-component      |   4.03 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                 |  Raw size
+polyfills.server.mjs | polyfills.server      | 572.91 kB | 
+chunk-CKY72MIT.mjs   | -                     |   6.40 kB | 
+chunk-SVJAGD5B.mjs   | -                     |   3.69 kB | 
+server.mjs           | server                |   1.45 kB | 
+chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
+main.server.mjs      | main.server           | 862 bytes | 
+
+Lazy chunk files     | Names                 |  Raw size
+chunk-6P6GKQTL.mjs   | upload-component      |  12.44 kB | 
+chunk-JISELAPO.mjs   | dashboard-component   |   7.40 kB | 
+chunk-U2SQPDOH.mjs   | auth-component        |   6.77 kB | 
+chunk-VQWEYM6G.mjs   | history-component     |   6.07 kB | 
+chunk-74VW6GMK.mjs   | suggestions-component |   5.53 kB | 
+chunk-JRSUMV6O.mjs   | health-component      |   4.07 kB | 
+
+Application bundle generation complete. [0.285 seconds]
 
 Page reload sent to client(s).
-NG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.

@@ -18,7 +18,12 @@
       required
       [disabled]="loading"
     />
-    <button type="submit" [disabled]="loading || !email || !password">
+    <button
+      type="submit"
+      [disabled]="loading || !email || !password"
+      class="btn"
+      [attr.aria-label]="mode === 'login' ? 'Log in' : 'Register an account'"
+    >
       {{ mode === 'login' ? 'Login' : 'Register' }}
     </button>
     <div *ngIf="errorMsg" class="error">{{ errorMsg }}</div>

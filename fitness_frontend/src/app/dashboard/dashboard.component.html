@@ -9,7 +9,14 @@
       Weight (kg):
       <input type="number" [(ngModel)]="weight" name="weight" required [min]="10" [max]="400" />
     </label>
-    <button type="submit" [disabled]="loading || !height || !weight">Save Health Data</button>
+    <button
+      type="submit"
+      class="btn"
+      [disabled]="loading || !height || !weight"
+      aria-label="Save Health Data"
+    >
+      Save Health Data
+    </button>
     <span *ngIf="errorMsg" class="error">{{ errorMsg }}</span>
   </form>
 
@@ -19,5 +26,10 @@
     <a routerLink="/history">View Workout History</a>
     <a routerLink="/health">View DB Health</a>
   </nav>
-  <button (click)="logout()">Logout</button>
+  <button
+    (click)="logout()"
+    class="btn"
+    aria-label="Log out"
+    type="button"
+  >Logout</button>
 </div>
