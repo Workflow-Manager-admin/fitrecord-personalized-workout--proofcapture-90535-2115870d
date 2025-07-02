@@ -21,14 +21,14 @@ chunk-D3CGBGY4.js    | upload-component      |  11.86 kB |
 chunk-GMZFVA5W.js    | dashboard-component   |   7.26 kB | 
 chunk-DXAFZXYV.js    | auth-component        |   6.62 kB | 
 chunk-HV3D3DMJ.js    | history-component     |   6.03 kB | 
-chunk-OHTKLSZL.js    | suggestions-component |   4.14 kB | 
+chunk-BKQSJ4UJ.js    | suggestions-component |   4.38 kB | 
 chunk-KPW3W6AI.js    | health-component      |   4.03 kB | 
 
 
 Server bundles      
 Initial chunk files  | Names                 |  Raw size
 polyfills.server.mjs | polyfills.server      | 572.91 kB | 
-chunk-OTPTZXOM.mjs   | -                     |   6.40 kB | 
+chunk-X5P3VM4R.mjs   | -                     |   6.40 kB | 
 chunk-SVJAGD5B.mjs   | -                     |   3.69 kB | 
 server.mjs           | server                |   1.45 kB | 
 chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
@@ -39,13 +39,15 @@ chunk-WVFGOOIE.mjs   | upload-component      |  11.89 kB |
 chunk-YIRPHNVF.mjs   | dashboard-component   |   7.30 kB | 
 chunk-F5YGBZA7.mjs   | auth-component        |   6.66 kB | 
 chunk-VQWEYM6G.mjs   | history-component     |   6.07 kB | 
-chunk-KS5IACOY.mjs   | suggestions-component |   4.17 kB | 
+chunk-RH5AOHMQ.mjs   | suggestions-component |   4.42 kB | 
 chunk-JRSUMV6O.mjs   | health-component      |   4.07 kB | 
 
-Application bundle generation complete. [3.030 seconds]
+Application bundle generation complete. [3.007 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
+1:59:44 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+1:59:44 PM [vite] (ssr) Re-optimizing dependencies because vite config has changed
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
@@ -55,43 +57,19 @@ Initial chunk files | Names                 |  Raw size
 main.js             | main                  |   5.99 kB | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-BKQSJ4UJ.js   | suggestions-component |   4.38 kB | 
+chunk-R6GMXIFM.js   | suggestions-component |   5.49 kB | 
 
 
 Server bundles     
 Initial chunk files | Names                 |  Raw size
-chunk-X5P3VM4R.mjs  | -                     |   6.40 kB | 
+chunk-MXCQWWTM.mjs  | -                     |   6.40 kB | 
 server.mjs          | server                |   1.45 kB | 
 main.server.mjs     | main.server           | 862 bytes | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-RH5AOHMQ.mjs  | suggestions-component |   4.42 kB | 
+chunk-74VW6GMK.mjs  | suggestions-component |   5.53 kB | 
 
-Application bundle generation complete. [0.804 seconds]
+Application bundle generation complete. [0.934 seconds]
 
 Page reload sent to client(s).
-fatal error: all goroutines are asleep - deadlock!
-
-goroutine 1 [chan receive]:
-github.com/evanw/esbuild/internal/helpers.(*ThreadSafeWaitGroup).Wait(...)
-	github.com/evanw/esbuild/internal/helpers/waitgroup.go:36
-main.runService.func2()
-	github.com/evanw/esbuild/cmd/esbuild/service.go:114 +0x51
-main.runService(0x1)
-	github.com/evanw/esbuild/cmd/esbuild/service.go:160 +0x50c
-main.main()
-	github.com/evanw/esbuild/cmd/esbuild/main.go:241 +0x9d9
-
-goroutine 7 [chan receive]:
-main.runService.func1()
-	github.com/evanw/esbuild/cmd/esbuild/service.go:98 +0x45
-created by main.runService in goroutine 1
-	github.com/evanw/esbuild/cmd/esbuild/service.go:97 +0x1db
-
-goroutine 17 [chan receive]:
-main.(*serviceType).sendRequest(0xc000182300, {0x986960, 0xc000e441b0})
-	github.com/evanw/esbuild/cmd/esbuild/service.go:192 +0x12b
-main.runService.func3()
-	github.com/evanw/esbuild/cmd/esbuild/service.go:125 +0x3e
-created by main.runService in goroutine 1
-	github.com/evanw/esbuild/cmd/esbuild/service.go:122 +0x30d
+NG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.
