@@ -49,3 +49,47 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
 NG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                 |  Raw size
+main.js             | main                  |   5.99 kB | 
+
+Lazy chunk files    | Names                 |  Raw size
+chunk-GBH36W6W.js   | suggestions-component |   8.09 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                 |  Raw size
+chunk-MR2RATE3.mjs  | -                     |   6.40 kB | 
+server.mjs          | server                |   1.45 kB | 
+main.server.mjs     | main.server           | 862 bytes | 
+
+Lazy chunk files    | Names                 |  Raw size
+chunk-6GNJHQF2.mjs  | suggestions-component |   8.13 kB | 
+
+Application bundle generation complete. [0.827 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names               |  Raw size
+main.js             | main                |   5.99 kB | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-DPRF2WW4.js   | dashboard-component |   8.22 kB | 
+
+
+Server bundles     
+Initial chunk files | Names               |  Raw size
+chunk-X2XR4QEP.mjs  | -                   |   6.40 kB | 
+server.mjs          | server              |   1.45 kB | 
+main.server.mjs     | main.server         | 862 bytes | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-I5P5VEA7.mjs  | dashboard-component |   8.26 kB | 
+
+Application bundle generation complete. [0.508 seconds]
+
+Page reload sent to client(s).

@@ -76,7 +76,10 @@ export class SuggestionsComponent {
     this.weight = data.weight;
 
     // If height/weight are not present, show error before making backend call.
-    if (!this.height || !this.weight) {
+    if (
+      this.height === null || this.height === undefined || Number.isNaN(+this.height) || +this.height < 30 || +this.height > 300 ||
+      this.weight === null || this.weight === undefined || Number.isNaN(+this.weight) || +this.weight < 10 || +this.weight > 400
+    ) {
       this.errorMsg = 'Please enter your height and weight in the dashboard first.';
       this.loading = false;
       return;

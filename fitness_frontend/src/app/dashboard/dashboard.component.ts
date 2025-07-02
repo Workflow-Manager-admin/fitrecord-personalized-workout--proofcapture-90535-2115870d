@@ -35,8 +35,11 @@ export class DashboardComponent {
     this.message = '';
     this.errorMsg = '';
 
-    if (this.height == null || this.weight == null) {
-      this.errorMsg = 'Please provide both height and weight.';
+    if (
+      this.height === null || this.height === undefined || Number.isNaN(+this.height) || +this.height < 30 || +this.height > 300 ||
+      this.weight === null || this.weight === undefined || Number.isNaN(+this.weight) || +this.weight < 10 || +this.weight > 400
+    ) {
+      this.errorMsg = 'Please provide both height and weight (valid range: 30–300 cm height, 10–400 kg weight).';
       return;
     }
     this.loading = true;
