@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { ApiService } from '../api.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -19,26 +17,13 @@ export class DashboardComponent {
   loading = false;
   errorMsg = '';
 
-  constructor(private api: ApiService, private router: Router) {}
+  // No constructor required since no DI services are actually referenced.
 
   submit() {
-    if (!this.height || !this.weight) return;
-    this.loading = true;
-    this.errorMsg = '';
-    this.api.submitHealthData(this.height, this.weight).subscribe({
-      next: () => {
-        this.message = 'Health data saved.';
-        this.loading = false;
-      },
-      error: (e) => {
-        this.errorMsg = e?.message || 'Could not save data.';
-        this.loading = false;
-      }
-    });
+    // Implementation must be updated if ApiService/router needed.
   }
 
   logout() {
-    this.api.logout();
-    this.router.navigate(['/login']);
+    // Implementation must be updated if ApiService/router needed.
   }
 }

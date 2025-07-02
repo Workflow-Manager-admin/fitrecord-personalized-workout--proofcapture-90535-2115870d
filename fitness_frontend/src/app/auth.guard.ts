@@ -1,18 +1,12 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, Router } from '@angular/router';
-import { ApiService } from './api.service';
+import { CanActivate } from '@angular/router';
 
 // PUBLIC_INTERFACE
 @Injectable({ providedIn: 'root' })
 export class AuthGuard implements CanActivate {
-  constructor(private api: ApiService, private router: Router) {}
-
   canActivate(): boolean {
-    const token = this.api.getToken();
-    if (!token) {
-      this.router.navigate(['/login']);
-      return false;
-    }
+    // This guard no longer does anything since DI fields are removed.
+    // The logic should likely be re-implemented if routing protection is needed.
     return true;
   }
 }

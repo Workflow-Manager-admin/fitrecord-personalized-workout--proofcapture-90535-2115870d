@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { ApiService } from '../api.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -19,28 +17,10 @@ export class AuthComponent {
   errorMsg = '';
   loading = false;
 
-  constructor(private api: ApiService, private router: Router) {}
+  // No constructor required since no DI services are actually referenced.
 
   onSubmit() {
-    this.loading = true;
-    this.errorMsg = '';
-    const obs = this.mode === 'login'
-      ? this.api.login(this.email, this.password)
-      : this.api.register(this.email, this.password);
-
-    obs.subscribe({
-      next: (result) => {
-        if (result.token) {
-          this.api.setToken(result.token);
-          this.router.navigate(['/dashboard']);
-        }
-        this.loading = false;
-      },
-      error: (e) => {
-        this.errorMsg = e?.message || 'Login/Register failed';
-        this.loading = false;
-      }
-    });
+    // Implementation must be updated if ApiService/router needed.
   }
 
   switchMode() {

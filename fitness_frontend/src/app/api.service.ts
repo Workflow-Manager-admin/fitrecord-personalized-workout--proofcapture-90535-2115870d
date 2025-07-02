@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 
 // PUBLIC_INTERFACE
@@ -22,10 +22,9 @@ export class ApiService {
 
   /** PUBLIC_INTERFACE: Returns JWT from localStorage, or null. */
   getToken(): string | null {
-    let theWindow: any = typeof window !== 'undefined' ? window : null;
     try {
-      return theWindow && theWindow.localStorage
-        ? theWindow.localStorage.getItem('jwt')
+      return typeof window !== 'undefined' && globalThis.window && globalThis.window.localStorage
+        ? globalThis.window.localStorage.getItem('jwt')
         : null;
     } catch {
       return null;
@@ -34,10 +33,9 @@ export class ApiService {
 
   /** PUBLIC_INTERFACE: Stores JWT securely. */
   setToken(token: string): void {
-    let theWindow: any = typeof window !== 'undefined' ? window : null;
     try {
-      if (theWindow && theWindow.localStorage) {
-        theWindow.localStorage.setItem('jwt', token);
+      if (typeof window !== 'undefined' && globalThis.window && globalThis.window.localStorage) {
+        globalThis.window.localStorage.setItem('jwt', token);
       }
     } catch {
       // do nothing
@@ -46,10 +44,9 @@ export class ApiService {
 
   /** PUBLIC_INTERFACE: Logs out and clears token. */
   logout(): void {
-    let theWindow: any = typeof window !== 'undefined' ? window : null;
     try {
-      if (theWindow && theWindow.localStorage) {
-        theWindow.localStorage.removeItem('jwt');
+      if (typeof window !== 'undefined' && globalThis.window && globalThis.window.localStorage) {
+        globalThis.window.localStorage.removeItem('jwt');
       }
     } catch {
       // do nothing

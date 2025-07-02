@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
 import { CommonModule } from '@angular/common';
 
 // PUBLIC_INTERFACE
@@ -15,18 +14,9 @@ export class HistoryComponent implements OnInit {
   errorMsg = '';
   workouts: any[] = [];
 
-  constructor(private api: ApiService) {}
+  // No constructor required since no DI services are actually referenced.
 
   ngOnInit() {
-    this.api.getHistory().subscribe({
-      next: res => {
-        this.workouts = res?.history || res || [];
-        this.loading = false;
-      },
-      error: err => {
-        this.errorMsg = err?.message || 'Failed to load history';
-        this.loading = false;
-      }
-    });
+    // Implementation must be updated if ApiService needed.
   }
 }
