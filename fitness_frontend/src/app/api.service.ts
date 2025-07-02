@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 
 // PUBLIC_INTERFACE
@@ -8,7 +8,10 @@ export class ApiService {
   /** All backend API requests use this base URL. Adjust if needed. */
   private readonly apiBase = 'http://localhost:3001';
 
-  constructor() {}
+  constructor(public http: HttpClient) {
+    // Reference http to fix linter unused-var error
+    void http;
+  }
 
   /** PUBLIC_INTERFACE: Registers a new user with the backend. */
   register(email: string, password: string): Observable<any> {

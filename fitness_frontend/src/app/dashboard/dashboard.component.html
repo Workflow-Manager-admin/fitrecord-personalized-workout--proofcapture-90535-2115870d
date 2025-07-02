@@ -13,6 +13,21 @@
     <span *ngIf="message" class="success">{{ message }}</span>
     <span *ngIf="errorMsg" class="error">{{ errorMsg }}</span>
   </form>
+
+  <!-- Display exercise suggestions immediately after submission -->
+  <div *ngIf="fetchingSuggestions" style="margin-top: 1.2rem;">
+    <b>Loading personalized exercise suggestions...</b>
+  </div>
+  <div *ngIf="suggestionsError" class="error" style="margin-top: 1.2rem;">
+    {{ suggestionsError }}
+  </div>
+  <div *ngIf="suggestions && !fetchingSuggestions" style="margin-top: 1.2rem;">
+    <h3>Personalized Exercise Suggestions</h3>
+    <pre *ngIf="suggestions | json as json">
+{{ json }}
+    </pre>
+  </div>
+
   <nav>
     <a routerLink="/suggestions">Get Exercise Plan</a>
     <a routerLink="/upload">Upload Workout Proof</a>

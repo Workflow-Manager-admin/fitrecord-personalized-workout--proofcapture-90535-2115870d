@@ -16,7 +16,7 @@ chunk-VTZCDIGA.js    | -                     |   1.31 kB |
                      | Initial total         | 102.09 kB
 
 Lazy chunk files     | Names                 |  Raw size
-chunk-4SATVEVU.js    | upload-component      |  14.51 kB | 
+chunk-D3CGBGY4.js    | upload-component      |  11.86 kB | 
 chunk-EISBSUFK.js    | dashboard-component   |   6.98 kB | 
 chunk-BGO7C7RQ.js    | auth-component        |   6.60 kB | 
 chunk-VJBCZY24.js    | history-component     |   6.02 kB | 
@@ -27,20 +27,20 @@ chunk-ZBE2BHSI.js    | suggestions-component |   3.57 kB |
 Server bundles      
 Initial chunk files  | Names                 |  Raw size
 polyfills.server.mjs | polyfills.server      | 572.91 kB | 
-chunk-WLRHYYVZ.mjs   | -                     |   6.21 kB | 
+chunk-RTZJALF3.mjs   | -                     |   6.21 kB | 
 server.mjs           | server                |   1.42 kB | 
 chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
 main.server.mjs      | main.server           | 831 bytes | 
 
 Lazy chunk files     | Names                 |  Raw size
-chunk-IV3X3ELT.mjs   | upload-component      |  14.54 kB | 
+chunk-WVFGOOIE.mjs   | upload-component      |  11.89 kB | 
 chunk-U2D2WNEZ.mjs   | dashboard-component   |   7.01 kB | 
 chunk-FK5CO2ZD.mjs   | auth-component        |   6.64 kB | 
 chunk-YCD5ZHUO.mjs   | history-component     |   6.05 kB | 
 chunk-WEKJEZHA.mjs   | health-component      |   4.05 kB | 
 chunk-HSPYXBAW.mjs   | suggestions-component |   3.60 kB | 
 
-Application bundle generation complete. [2.721 seconds]
+Application bundle generation complete. [2.976 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -48,47 +48,357 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names            |  Raw size
-main.js             | main             |   5.80 kB | 
+Application bundle generation failed. [0.898 seconds]
 
-Lazy chunk files    | Names            |  Raw size
-chunk-NZ255ML2.js   | upload-component |  12.61 kB | 
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:15:16:
+      15 │     return this.http.post<any>(`${this.apiBase}/auth/register`, { ...
+         ╵                 ~~~~
 
 
-Server bundles     
-Initial chunk files | Names            |  Raw size
-chunk-Y5ICZFDH.mjs  | -                |   6.21 kB | 
-server.mjs          | server           |   1.42 kB | 
-main.server.mjs     | main.server      | 831 bytes | 
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
 
-Lazy chunk files    | Names            |  Raw size
-chunk-ZPHJJC7V.mjs  | upload-component |  12.64 kB | 
+    src/app/api.service.ts:20:16:
+      20 │     return this.http.post<any>(`${this.apiBase}/auth/login`, { ema...
+         ╵                 ~~~~
 
-Application bundle generation complete. [0.790 seconds]
 
-Page reload sent to client(s).
-1:33:39 PM [vite] Internal server error: ɵgetOrCreateAngularServerApp is not a function
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:66:16:
+      66 │     return this.http.post<any>(
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:75:16:
+      75 │     return this.http.get<any>(`${this.apiBase}/exercise/suggestion...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:84:16:
+      84 │     return this.http.post<any>(
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:93:16:
+      93 │     return this.http.get<any>(`${this.apiBase}/user/history`, { he...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:98:16:
+      98 │     return this.http.get<any>(`${this.apiBase}/health/db`);
+         ╵                 ~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.384 seconds]
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:15:16:
+      15 │     return this.http.post<any>(`${this.apiBase}/auth/register`, { ...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:20:16:
+      20 │     return this.http.post<any>(`${this.apiBase}/auth/login`, { ema...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:66:16:
+      66 │     return this.http.post<any>(
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:75:16:
+      75 │     return this.http.get<any>(`${this.apiBase}/exercise/suggestion...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:84:16:
+      84 │     return this.http.post<any>(
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:93:16:
+      93 │     return this.http.get<any>(`${this.apiBase}/user/history`, { he...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:98:16:
+      98 │     return this.http.get<any>(`${this.apiBase}/health/db`);
+         ╵                 ~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.417 seconds]
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:15:16:
+      15 │     return this.http.post<any>(`${this.apiBase}/auth/register`, { ...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:20:16:
+      20 │     return this.http.post<any>(`${this.apiBase}/auth/login`, { ema...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:66:16:
+      66 │     return this.http.post<any>(
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:75:16:
+      75 │     return this.http.get<any>(`${this.apiBase}/exercise/suggestion...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:84:16:
+      84 │     return this.http.post<any>(
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:93:16:
+      93 │     return this.http.get<any>(`${this.apiBase}/user/history`, { he...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:98:16:
+      98 │     return this.http.get<any>(`${this.apiBase}/health/db`);
+         ╵                 ~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.195 seconds]
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:15:16:
+      15 │     return this.http.post<any>(`${this.apiBase}/auth/register`, { ...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:20:16:
+      20 │     return this.http.post<any>(`${this.apiBase}/auth/login`, { ema...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:66:16:
+      66 │     return this.http.post<any>(
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:75:16:
+      75 │     return this.http.get<any>(`${this.apiBase}/exercise/suggestion...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:84:16:
+      84 │     return this.http.post<any>(
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:93:16:
+      93 │     return this.http.get<any>(`${this.apiBase}/user/history`, { he...
+         ╵                 ~~~~
+
+
+✘ [ERROR] TS2339: Property 'http' does not exist on type 'ApiService'. [plugin angular-compiler]
+
+    src/app/api.service.ts:98:16:
+      98 │     return this.http.get<any>(`${this.apiBase}/health/db`);
+         ╵                 ~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                 |  Raw size
+polyfills.js         | polyfills             |  90.20 kB | 
+main.js              | main                  |   5.92 kB | 
+styles.css           | styles                |   4.78 kB | 
+chunk-SMLMP6X3.js    | -                     |   3.64 kB | 
+chunk-VTZCDIGA.js    | -                     |   1.31 kB | 
+
+                     | Initial total         | 105.85 kB
+
+Lazy chunk files     | Names                 |  Raw size
+chunk-D3CGBGY4.js    | upload-component      |  11.86 kB | 
+chunk-QAOCRWXE.js    | dashboard-component   |  10.70 kB | 
+chunk-BGO7C7RQ.js    | auth-component        |   6.60 kB | 
+chunk-VJBCZY24.js    | history-component     |   6.02 kB | 
+chunk-QCWNXCYZ.js    | health-component      |   4.02 kB | 
+chunk-ZBE2BHSI.js    | suggestions-component |   3.57 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                 |  Raw size
+polyfills.server.mjs | polyfills.server      | 572.91 kB | 
+chunk-W5BM5A6O.mjs   | -                     |   6.33 kB | 
+chunk-V2MTWI2Q.mjs   | -                     |   3.68 kB | 
+server.mjs           | server                |   1.45 kB | 
+chunk-4LWRAYML.mjs   | -                     |   1.35 kB | 
+main.server.mjs      | main.server           | 862 bytes | 
+
+Lazy chunk files     | Names                 |  Raw size
+chunk-WVFGOOIE.mjs   | upload-component      |  11.89 kB | 
+chunk-YKPTZ2AE.mjs   | dashboard-component   |  10.74 kB | 
+chunk-FK5CO2ZD.mjs   | auth-component        |   6.64 kB | 
+chunk-YCD5ZHUO.mjs   | history-component     |   6.05 kB | 
+chunk-WEKJEZHA.mjs   | health-component      |   4.05 kB | 
+chunk-HSPYXBAW.mjs   | suggestions-component |   3.60 kB | 
+
+Application bundle generation complete. [0.313 seconds]
+
+1:40:22 PM [vite] Internal server error: ɵgetOrCreateAngularServerApp is not a function
       at /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/build/src/tools/vite/middlewares/ssr-middleware.js:30:38
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+1:40:22 PM [vite] Internal server error: ɵgetOrCreateAngularServerApp is not a function
+      at /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/build/src/tools/vite/middlewares/ssr-middleware.js:30:38
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+1:40:27 PM [vite] (ssr) ✨ new dependencies optimized: rxjs
+1:40:27 PM [vite] (ssr) ✨ optimized dependencies changed. reloading
+Page reload sent to client(s).
+NG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.
+1:40:35 PM [vite] (client) ✨ new dependencies optimized: rxjs
+1:40:35 PM [vite] (client) ✨ optimized dependencies changed. reloading
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
-Initial chunk files | Names            |  Raw size
-main.js             | main             |   5.80 kB | 
+Initial chunk files | Names               |  Raw size
+main.js             | main                |   5.92 kB | 
+chunk-M2DND73Z.js   | -                   |   3.70 kB | 
 
-Lazy chunk files    | Names            |  Raw size
-chunk-D3CGBGY4.js   | upload-component |  11.86 kB | 
+Lazy chunk files    | Names               |  Raw size
+chunk-GCTPXOB5.js   | dashboard-component |  10.70 kB | 
 
 
 Server bundles     
-Initial chunk files | Names            |  Raw size
-chunk-RTZJALF3.mjs  | -                |   6.21 kB | 
-server.mjs          | server           |   1.42 kB | 
-main.server.mjs     | main.server      | 831 bytes | 
+Initial chunk files | Names               |  Raw size
+chunk-Q3QT3QXL.mjs  | -                   |   6.33 kB | 
+chunk-JRNPFVFE.mjs  | -                   |   3.73 kB | 
+server.mjs          | server              |   1.45 kB | 
+main.server.mjs     | main.server         | 862 bytes | 
 
-Lazy chunk files    | Names            |  Raw size
-chunk-WVFGOOIE.mjs  | upload-component |  11.89 kB | 
+Lazy chunk files    | Names               |  Raw size
+chunk-JMG6UGDM.mjs  | dashboard-component |  10.74 kB | 
 
-Application bundle generation complete. [0.471 seconds]
+Application bundle generation complete. [0.357 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names               |  Raw size
+main.js             | main                |   5.92 kB | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-RU6SPAOK.js   | dashboard-component |  10.76 kB | 
+
+
+Server bundles     
+Initial chunk files | Names               |  Raw size
+chunk-OZRB2U2V.mjs  | -                   |   6.33 kB | 
+server.mjs          | server              |   1.45 kB | 
+main.server.mjs     | main.server         | 862 bytes | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-BY4TJKEB.mjs  | dashboard-component |  10.79 kB | 
+
+Application bundle generation complete. [0.356 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names               |  Raw size
+main.js             | main                |   5.92 kB | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-5ZTR2IYJ.js   | dashboard-component |  10.73 kB | 
+
+
+Server bundles     
+Initial chunk files | Names               |  Raw size
+chunk-EPXA77VY.mjs  | -                   |   6.33 kB | 
+server.mjs          | server              |   1.45 kB | 
+main.server.mjs     | main.server         | 862 bytes | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-XSDTXOCN.mjs  | dashboard-component |  10.77 kB | 
+
+Application bundle generation complete. [0.350 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names               |  Raw size
+main.js             | main                |   5.92 kB | 
+chunk-ULWSWZZY.js   | -                   |   3.66 kB | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-OHHO5XZK.js   | dashboard-component |  10.73 kB | 
+
+
+Server bundles     
+Initial chunk files | Names               |  Raw size
+chunk-Q46RJULX.mjs  | -                   |   6.33 kB | 
+chunk-SVJAGD5B.mjs  | -                   |   3.69 kB | 
+server.mjs          | server              |   1.45 kB | 
+main.server.mjs     | main.server         | 862 bytes | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-OPUEK3R4.mjs  | dashboard-component |  10.77 kB | 
+
+Application bundle generation complete. [0.188 seconds]
 
 Page reload sent to client(s).
