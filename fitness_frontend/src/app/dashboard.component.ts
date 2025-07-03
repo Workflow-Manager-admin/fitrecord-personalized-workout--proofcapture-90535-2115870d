@@ -34,7 +34,6 @@ export class DashboardComponent {
   error = '';
 
   constructor(private api: ApiService) {
-    void this.api; // prevent unused var linter error
     this.ngOnInit();
   }
 

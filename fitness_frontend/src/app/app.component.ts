@@ -3,12 +3,10 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar.component';
 import { SidenavComponent } from './sidenav.component';
-import { AuthComponent } from './auth.component';
 import { DataEntryComponent } from './data-entry.component';
 import { ExercisesComponent } from './exercises.component';
 import { ProofUploadComponent } from './proof-upload.component';
 import { DashboardComponent } from './dashboard.component';
-import { getBrowser } from './shared/ssr-utils';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -19,7 +17,6 @@ import { getBrowser } from './shared/ssr-utils';
     FormsModule,
     NavbarComponent,
     SidenavComponent,
-    AuthComponent,
     DataEntryComponent,
     ExercisesComponent,
     ProofUploadComponent,
@@ -27,8 +24,8 @@ import { getBrowser } from './shared/ssr-utils';
   ],
   template: `
     <div class="main-layout">
-      <app-navbar (logout)="onLogout()"></app-navbar>
-      <div class="body-container" *ngIf="loggedIn; else authBlock">
+      <app-navbar></app-navbar>
+      <div class="body-container">
         <div class="sidenav-container">
           <app-sidenav
             [selected]="activeSection"
@@ -44,32 +41,12 @@ import { getBrowser } from './shared/ssr-utils';
           </ng-container>
         </div>
       </div>
-      <ng-template #authBlock>
-        <div class="auth-content">
-          <app-auth (authenticated)="onAuth()"></app-auth>
-        </div>
-      </ng-template>
     </div>
   `,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  loggedIn = false;
   activeSection: 'dashboard' | 'data-entry' | 'exercises' | 'upload' = 'dashboard';
-
-  onAuth() {
-    this.loggedIn = true;
-    this.activeSection = 'dashboard';
-  }
-
-  onLogout() {
-    const browser = getBrowser();
-    if (browser && browser.localStorage) {
-      browser.localStorage.clear();
-    }
-    this.loggedIn = false;
-    this.activeSection = 'dashboard';
-  }
 
   onNavSelect(section: any) {
     this.activeSection = section;

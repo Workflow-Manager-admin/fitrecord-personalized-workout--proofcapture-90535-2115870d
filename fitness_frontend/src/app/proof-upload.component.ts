@@ -40,9 +40,7 @@ export class ProofUploadComponent {
   status = '';
   error = '';
 
-  constructor(private api: ApiService) {
-    void this.api; // prevent unused var linter error
-  }
+  constructor(private api: ApiService) {}
 
   async startRecording() {
     this.status = '';

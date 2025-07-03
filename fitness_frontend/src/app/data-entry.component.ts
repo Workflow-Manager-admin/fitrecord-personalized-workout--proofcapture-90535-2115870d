@@ -33,7 +33,6 @@ export class DataEntryComponent {
   error = '';
   loading = false;
   constructor(private api: ApiService) {
-    void this.api; // prevent unused var linter error
     this.getProfile();
   }
   async getProfile() {
