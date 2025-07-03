@@ -1,0 +1,4 @@
+{
+    "command": "npm start -- --port <port> --host <host>",
+    "working_directory": "/home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend"
+}
