@@ -37,6 +37,7 @@ export class DataEntryComponent {
   }
   async getProfile() {
     try {
+      // Use injected ApiService for fetching user profile
       const p = await this.api.getProfile();
       this.weight = p?.weight || null;
       this.height = p?.height || null;

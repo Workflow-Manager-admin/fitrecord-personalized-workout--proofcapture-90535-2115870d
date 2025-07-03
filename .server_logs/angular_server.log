@@ -9,20 +9,20 @@ The "disableHostCheck" option will not be used because it is not supported by th
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
 polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  50.49 kB | 
+main.js              | main             |  36.81 kB | 
 styles.css           | styles           |   2.08 kB | 
 
-                     | Initial total    | 142.77 kB
+                     | Initial total    | 129.09 kB
 
 
 Server bundles      
 Initial chunk files  | Names            |  Raw size
 polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-IURTDX32.mjs   | -                |  50.93 kB | 
+chunk-RKALRZRL.mjs   | -                |  37.24 kB | 
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [3.177 seconds]
+Application bundle generation complete. [3.480 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -30,170 +30,7 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [1.162 seconds]
-
-✘ [ERROR] Program does not contain "/home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/auth.component.ngtypecheck.ts" - available files are /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es5.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2015.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2016.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2017.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2018.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2019.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2020.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2021.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2022.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.dom.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.dom.iterable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.dom.asynciterable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.webworker.importscripts.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.scripthost.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2015.core.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2015.collection.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2015.generator.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2015.iterable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2015.promise.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2015.proxy.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2015.reflect.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2015.symbol.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2016.array.include.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2016.intl.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2017.arraybuffer.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2017.date.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2017.object.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2017.string.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2017.intl.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2018.intl.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2018.promise.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2018.regexp.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2019.array.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2019.object.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2019.string.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2019.symbol.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2019.intl.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2020.bigint.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2020.date.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2020.promise.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2020.string.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2020.intl.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2020.number.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2021.promise.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2021.string.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2021.weakref.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2021.intl.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2022.array.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2022.error.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2022.intl.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2022.object.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2022.string.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2022.regexp.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.decorators.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.decorators.legacy.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/typescript/lib/lib.es2022.full.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/tslib/tslib.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/tslib/modules/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/main.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/Subscription.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/Subscriber.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/Operator.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/Observable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/types.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/audit.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/auditTime.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/buffer.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/bufferCount.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/bufferTime.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/bufferToggle.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/bufferWhen.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/catchError.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/combineLatestAll.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/combineAll.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/combineLatest.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/combineLatestWith.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/concat.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/concatAll.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/concatMap.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/concatMapTo.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/concatWith.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/connect.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/count.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/debounce.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/debounceTime.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/defaultIfEmpty.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/delay.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/delayWhen.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/dematerialize.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/distinct.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/distinctUntilChanged.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/distinctUntilKeyChanged.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/elementAt.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/endWith.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/every.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/exhaustAll.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/exhaust.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/exhaustMap.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/expand.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/filter.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/finalize.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/find.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/findIndex.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/first.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/Subject.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/groupBy.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/ignoreElements.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/isEmpty.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/last.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/map.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/mapTo.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/Notification.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/materialize.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/max.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/merge.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/mergeAll.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/mergeMap.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/flatMap.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/mergeMapTo.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/mergeScan.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/mergeWith.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/min.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/ConnectableObservable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/multicast.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/observeOn.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/onErrorResumeNextWith.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/pairwise.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/partition.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/pluck.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/publish.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/publishBehavior.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/publishLast.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/publishReplay.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/race.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/raceWith.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/reduce.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/repeat.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/repeatWhen.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/retry.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/retryWhen.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/refCount.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/sample.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/sampleTime.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/scan.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/sequenceEqual.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/share.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/shareReplay.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/single.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/skip.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/skipLast.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/skipUntil.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/skipWhile.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/startWith.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/subscribeOn.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/switchAll.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/switchMap.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/switchMapTo.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/switchScan.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/take.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/takeLast.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/takeUntil.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/takeWhile.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/tap.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/throttle.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/throttleTime.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/throwIfEmpty.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/timeInterval.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/timeout.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/timeoutWith.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/timestamp.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/toArray.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/window.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/windowCount.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/windowTime.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/windowToggle.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/windowWhen.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/withLatestFrom.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/zip.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/zipAll.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/operators/zipWith.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/operators/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/Action.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/Scheduler.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/testing/TestMessage.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/testing/SubscriptionLog.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/testing/SubscriptionLoggable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/testing/ColdObservable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/testing/HotObservable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/AsyncScheduler.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/timerHandle.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/AsyncAction.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/VirtualTimeScheduler.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/testing/TestScheduler.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/testing/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/symbol/observable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/dom/animationFrames.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/BehaviorSubject.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/ReplaySubject.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/AsyncSubject.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/AsapScheduler.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/asap.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/async.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/QueueScheduler.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/queue.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/AnimationFrameScheduler.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduler/animationFrame.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/util/identity.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/util/pipe.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/util/noop.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/util/isObservable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/lastValueFrom.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/firstValueFrom.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/util/ArgumentOutOfRangeError.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/util/EmptyError.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/util/NotFoundError.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/util/ObjectUnsubscribedError.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/util/SequenceError.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/util/UnsubscriptionError.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/bindCallback.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/bindNodeCallback.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/AnyCatcher.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/combineLatest.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/concat.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/connectable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/defer.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/empty.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/forkJoin.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/from.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/fromEvent.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/fromEventPattern.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/generate.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/iif.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/interval.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/merge.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/never.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/of.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/onErrorResumeNext.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/pairs.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/partition.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/race.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/range.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/throwError.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/timer.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/using.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/observable/zip.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/scheduled/scheduled.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/internal/config.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/rxjs/dist/types/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/core/primitives/event-dispatch/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/core/primitives/signals/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/core/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/common/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/common/http/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/platform-browser/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/app.config.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/router/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/app.routes.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/app.routes.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/app.config.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/sidenav.component.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/sidenav.component.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/forms/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/data-entry.component.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/shared/api.service.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/shared/ssr-utils.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/shared/ssr-utils.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/shared/api.service.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/data-entry.component.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/app.component.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/navbar.component.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/navbar.component.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/exercises.component.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/exercises.component.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/proof-upload.component.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/proof-upload.component.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/dashboard.component.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/dashboard.component.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/app.component.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/main.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/main.server.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/app.config.server.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/platform-server/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/app/app.config.server.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/main.server.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/server.ngtypecheck.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/ssr/node/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/compatibility/disposable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/compatibility/indexable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/compatibility/iterators.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/compatibility/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/globals.typedarray.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/buffer.buffer.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/buffer/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/header.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/readable.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/file.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/fetch.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/formdata.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/connector.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/client.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/errors.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/dispatcher.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/global-dispatcher.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/global-origin.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/pool-stats.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/pool.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/handlers.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/balanced-pool.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/agent.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/mock-interceptor.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/mock-agent.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/mock-client.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/mock-pool.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/mock-errors.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/proxy-agent.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/api.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/cookies.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/patch.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/filereader.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/diagnostics-channel.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/websocket.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/content-type.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/cache.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/interceptors.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/undici-types/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/globals.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/assert.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/assert/strict.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/async_hooks.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/buffer.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/child_process.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/cluster.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/console.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/constants.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/crypto.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/dgram.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/diagnostics_channel.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/dns.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/dns/promises.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/domain.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/dom-events.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/events.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/fs.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/fs/promises.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/http.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/http2.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/https.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/inspector.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/module.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/net.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/os.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/path.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/perf_hooks.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/process.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/punycode.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/querystring.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/readline.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/readline/promises.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/repl.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/stream.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/stream/promises.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/stream/consumers.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/stream/web.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/string_decoder.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/test.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/timers.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/timers/promises.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/tls.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/trace_events.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/tty.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/url.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/util.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/v8.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/vm.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/wasi.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/worker_threads.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/zlib.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/node/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/mime/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/send/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/qs/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/range-parser/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/express-serve-static-core/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/http-errors/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/serve-static/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/connect/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/body-parser/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@types/express/index.d.ts, /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/src/server.ts [plugin angular-compiler]
-
-    node_modules/@angular/build/src/tools/angular/compilation/aot-compilation.js:199:121:
-      199 │ ...MPLATE', () => angularCompiler.getDiagnosticsForFile(sourceFil...
-          ╵                                   ^
-
-    at getSourceFileOrError (file:///home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/compiler-cli/bundles/chunk-37JMVF7H.js:20:11)
-    at file:///home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/compiler-cli/bundles/chunk-J2ZUZS7X.js:13092:24
-    at DelegatingPerfRecorder.inPhase (file:///home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/compiler-cli/bundles/chunk-Q2WE7ECN.js:189:14)
-    at TemplateTypeCheckerImpl.getDiagnosticsForFile (file:///home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/compiler-cli/bundles/chunk-J2ZUZS7X.js:13082:22)
-    at NgCompiler.getTemplateDiagnosticsForFile (file:///home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/compiler-cli/bundles/chunk-YDD3LCLX.js:4062:59)
-    at NgCompiler.getDiagnosticsForFile (file:///home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/compiler-cli/bundles/chunk-YDD3LCLX.js:3716:32)
-    at /home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/build/src/tools/angular/compilation/aot-compilation.js:199:122
-    at profileSync (/home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/build/src/tools/esbuild/profiling.js:68:16)
-    at AotCompilation.collectDiagnostics (/home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/build/src/tools/angular/compilation/aot-compilation.js:199:72)
-    at collectDiagnostics.next (<anonymous>)
-
-  This error came from the "onStart" callback registered here:
-
-    node_modules/@angular/build/src/tools/esbuild/angular/compiler-plugin.js:119:18:
-      119 │             build.onStart(async () => {
-          ╵                   ~~~~~~~
-
-    at setup (/home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/@angular/build/src/tools/esbuild/angular/compiler-plugin.js:119:19)
-    at async handlePlugins (/home/kavia/workspace/code-generation/fitrecord-personalized-workout--proofcapture-90535-2115870d/fitness_frontend/node_modules/esbuild/lib/main.js:1195:20)
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names            |  Raw size
-polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  38.25 kB | 
-styles.css           | styles           |   2.08 kB | 
-
-                     | Initial total    | 130.53 kB
-
-
-Server bundles      
-Initial chunk files  | Names            |  Raw size
-polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-U7AG2XFY.mjs   | -                |  38.68 kB | 
-server.mjs           | server           |   1.39 kB | 
-main.server.mjs      | main.server      | 800 bytes | 
-
-Application bundle generation complete. [0.566 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |  36.85 kB | 
-
-
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-Y4HGWLJJ.mjs  | -           |  37.28 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
-
-Application bundle generation complete. [0.460 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |  36.86 kB | 
-
-
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-Q2Y7VRX5.mjs  | -           |  37.30 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
-
-Application bundle generation complete. [0.225 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-GIJRIQWG.mjs  | -           |  37.30 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
-
-Application bundle generation complete. [0.160 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |  36.84 kB | 
-
-
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-OXCG2ASV.mjs  | -           |  37.28 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
-
-Application bundle generation complete. [0.382 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |  36.83 kB | 
-
-
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-DH7GJTDI.mjs  | -           |  37.26 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
-
-Application bundle generation complete. [0.284 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names            |  Raw size
-polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  36.83 kB | 
-styles.css           | styles           |   2.08 kB | 
-
-                     | Initial total    | 129.10 kB
-
-
-Server bundles      
-Initial chunk files  | Names            |  Raw size
-polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-DH7GJTDI.mjs   | -                |  37.26 kB | 
-server.mjs           | server           |   1.39 kB | 
-main.server.mjs      | main.server      | 800 bytes | 
-
-Application bundle generation complete. [0.176 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |  36.81 kB | 
-
-
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-RKALRZRL.mjs  | -           |  37.24 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
-
-Application bundle generation complete. [0.474 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.337 seconds]
+Application bundle generation failed. [1.152 seconds]
 
 ✘ [ERROR] TS2339: Property 'api' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
 
@@ -204,7 +41,7 @@ Application bundle generation failed. [0.337 seconds]
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.464 seconds]
+Application bundle generation failed. [0.481 seconds]
 
 ✘ [ERROR] TS2339: Property 'api' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
 
@@ -229,7 +66,7 @@ Application bundle generation failed. [0.464 seconds]
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.374 seconds]
+Application bundle generation failed. [0.486 seconds]
 
 ✘ [ERROR] TS2339: Property 'api' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
 
@@ -252,16 +89,16 @@ Application bundle generation failed. [0.374 seconds]
          ╵                  ~~~
 
 
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'ExercisesComponent'. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'api' does not exist on type 'ProofUploadComponent'. [plugin angular-compiler]
 
-    src/app/exercises.component.ts:40:37:
-      40 │       this.exercisePlan = await this.api.getExercisePlan();
-         ╵                                      ~~~
+    src/app/proof-upload.component.ts:109:17:
+      109 │       await this.api.uploadProof(this.recordedBlob);
+          ╵                  ~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.330 seconds]
+Application bundle generation failed. [0.406 seconds]
 
 ✘ [ERROR] TS2339: Property 'api' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
 
@@ -284,13 +121,6 @@ Application bundle generation failed. [0.330 seconds]
          ╵                  ~~~
 
 
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'ExercisesComponent'. [plugin angular-compiler]
-
-    src/app/exercises.component.ts:40:37:
-      40 │       this.exercisePlan = await this.api.getExercisePlan();
-         ╵                                      ~~~
-
-
 ✘ [ERROR] TS2339: Property 'api' does not exist on type 'ProofUploadComponent'. [plugin angular-compiler]
 
     src/app/proof-upload.component.ts:109:17:
@@ -300,14 +130,7 @@ Application bundle generation failed. [0.330 seconds]
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.241 seconds]
-
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'DashboardComponent'. [plugin angular-compiler]
-
-    src/app/dashboard.component.ts:43:33:
-      43 │       this.workouts = await this.api.getWorkoutHistory();
-         ╵                                  ~~~
-
+Application bundle generation failed. [0.389 seconds]
 
 ✘ [ERROR] TS2339: Property 'api' does not exist on type 'DataEntryComponent'. [plugin angular-compiler]
 
@@ -323,13 +146,6 @@ Application bundle generation failed. [0.241 seconds]
          ╵                  ~~~
 
 
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'ExercisesComponent'. [plugin angular-compiler]
-
-    src/app/exercises.component.ts:40:37:
-      40 │       this.exercisePlan = await this.api.getExercisePlan();
-         ╵                                      ~~~
-
-
 ✘ [ERROR] TS2339: Property 'api' does not exist on type 'ProofUploadComponent'. [plugin angular-compiler]
 
     src/app/proof-upload.component.ts:109:17:
@@ -339,7 +155,7 @@ Application bundle generation failed. [0.241 seconds]
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.252 seconds]
+Application bundle generation failed. [0.182 seconds]
 
 ✘ [ERROR] TS2339: Property 'api' does not exist on type 'DataEntryComponent'. [plugin angular-compiler]
 
@@ -355,12 +171,16 @@ Application bundle generation failed. [0.252 seconds]
          ╵                  ~~~
 
 
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'ExercisesComponent'. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'api' does not exist on type 'ProofUploadComponent'. [plugin angular-compiler]
 
-    src/app/exercises.component.ts:40:37:
-      40 │       this.exercisePlan = await this.api.getExercisePlan();
-         ╵                                      ~~~
+    src/app/proof-upload.component.ts:109:17:
+      109 │       await this.api.uploadProof(this.recordedBlob);
+          ╵                  ~~~
 
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.280 seconds]
 
 ✘ [ERROR] TS2339: Property 'api' does not exist on type 'ProofUploadComponent'. [plugin angular-compiler]
 
@@ -371,68 +191,7 @@ Application bundle generation failed. [0.252 seconds]
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.189 seconds]
-
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'DataEntryComponent'. [plugin angular-compiler]
-
-    src/app/data-entry.component.ts:40:27:
-      40 │       const p = await this.api.getProfile();
-         ╵                            ~~~
-
-
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'DataEntryComponent'. [plugin angular-compiler]
-
-    src/app/data-entry.component.ts:52:17:
-      52 │       await this.api.updateProfile(this.weight, this.height);
-         ╵                  ~~~
-
-
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'ExercisesComponent'. [plugin angular-compiler]
-
-    src/app/exercises.component.ts:40:37:
-      40 │       this.exercisePlan = await this.api.getExercisePlan();
-         ╵                                      ~~~
-
-
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'ProofUploadComponent'. [plugin angular-compiler]
-
-    src/app/proof-upload.component.ts:109:17:
-      109 │       await this.api.uploadProof(this.recordedBlob);
-          ╵                  ~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.334 seconds]
-
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'ExercisesComponent'. [plugin angular-compiler]
-
-    src/app/exercises.component.ts:40:37:
-      40 │       this.exercisePlan = await this.api.getExercisePlan();
-         ╵                                      ~~~
-
-
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'ProofUploadComponent'. [plugin angular-compiler]
-
-    src/app/proof-upload.component.ts:109:17:
-      109 │       await this.api.uploadProof(this.recordedBlob);
-          ╵                  ~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.261 seconds]
-
-✘ [ERROR] TS2339: Property 'api' does not exist on type 'ProofUploadComponent'. [plugin angular-compiler]
-
-    src/app/proof-upload.component.ts:109:17:
-      109 │       await this.api.uploadProof(this.recordedBlob);
-          ╵                  ~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.302 seconds]
+Application bundle generation failed. [0.409 seconds]
 
 ✘ [ERROR] TS2339: Property 'api' does not exist on type 'ProofUploadComponent'. [plugin angular-compiler]
 
@@ -459,6 +218,121 @@ chunk-RKALRZRL.mjs   | -                |  37.24 kB |
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [0.341 seconds]
+Application bundle generation complete. [0.438 seconds]
 
 Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.736 seconds]
+
+✘ [ERROR] TS-992003: No suitable injection token for parameter 'api' of class 'ExercisesComponent'.
+  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
+
+    src/app/exercises.component.ts:33:22:
+      33 │   constructor(private api: ApiService) {
+         ╵                       ~~~
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/exercises.component.ts:33:27:
+      33 │   constructor(private api: ApiService) {
+         ╵                            ~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'ApiService'. [plugin angular-compiler]
+
+    src/app/exercises.component.ts:33:27:
+      33 │   constructor(private api: ApiService) {
+         ╵                            ~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  36.81 kB | 
+styles.css           | styles           |   2.08 kB | 
+
+                     | Initial total    | 129.09 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-S3ZYQJFQ.mjs   | -                |  37.24 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.344 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-WUWNNS2T.mjs  | -           |  37.24 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.382 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-7OEJUNP3.mjs  | -           |  37.24 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.236 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-2BTNR64Q.mjs  | -           |  37.24 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.424 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-5WDE6MYN.mjs  | -           |  37.24 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.359 seconds]
+
+Page reload sent to client(s).
+fatal error: all goroutines are asleep - deadlock!
+
+goroutine 1 [chan receive]:
+github.com/evanw/esbuild/internal/helpers.(*ThreadSafeWaitGroup).Wait(...)
+	github.com/evanw/esbuild/internal/helpers/waitgroup.go:36
+main.runService.func2()
+	github.com/evanw/esbuild/cmd/esbuild/service.go:114 +0x51
+main.runService(0x1)
+	github.com/evanw/esbuild/cmd/esbuild/service.go:160 +0x50c
+main.main()
+	github.com/evanw/esbuild/cmd/esbuild/main.go:241 +0x9d9
+
+goroutine 7 [chan receive]:
+main.runService.func1()
+	github.com/evanw/esbuild/cmd/esbuild/service.go:98 +0x45
+created by main.runService in goroutine 1
+	github.com/evanw/esbuild/cmd/esbuild/service.go:97 +0x1db
+
+goroutine 8 [chan receive]:
+main.(*serviceType).sendRequest(0xc000182300, {0x986960, 0xc00152a6f0})
+	github.com/evanw/esbuild/cmd/esbuild/service.go:192 +0x12b
+main.runService.func3()
+	github.com/evanw/esbuild/cmd/esbuild/service.go:125 +0x3e
+created by main.runService in goroutine 1
+	github.com/evanw/esbuild/cmd/esbuild/service.go:122 +0x30d

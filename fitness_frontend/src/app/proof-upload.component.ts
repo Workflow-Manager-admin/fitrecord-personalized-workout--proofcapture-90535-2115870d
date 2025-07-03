@@ -106,6 +106,7 @@ export class ProofUploadComponent {
     this.error = '';
     this.status = '';
     try {
+      // Use injected ApiService for uploading proof
       await this.api.uploadProof(this.recordedBlob);
       this.status = 'Upload successful!';
       this.recordedBlob = null;

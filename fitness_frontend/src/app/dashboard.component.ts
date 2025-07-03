@@ -40,6 +40,7 @@ export class DashboardComponent {
   async ngOnInit() {
     this.loading = true;
     try {
+      // Use injected ApiService for fetching data
       this.workouts = await this.api.getWorkoutHistory();
     } catch (e: any) {
       this.error = e?.error || e?.message || 'Failed to load workout history';

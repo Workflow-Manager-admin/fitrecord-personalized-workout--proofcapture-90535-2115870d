@@ -1,3 +1,4 @@
+// PUBLIC_INTERFACE
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ApiService } from './shared/api.service';
@@ -37,6 +38,7 @@ export class ExercisesComponent {
   async ngOnInit() {
     this.loading = true;
     try {
+      // Use injected ApiService for fetching exercise plan
       this.exercisePlan = await this.api.getExercisePlan();
     } catch (e: any) {
       this.error = e?.error || e?.message || 'Failed to load plan.';
