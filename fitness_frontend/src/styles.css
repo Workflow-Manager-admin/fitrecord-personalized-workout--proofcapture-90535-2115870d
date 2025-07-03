@@ -1,1 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #e9f2fb;
+  --secondary: #182b18;
+  --accent: #ff2465;
+  --background: #ffffff;
+  --card: #f5f8fb;
+  --text: #222;
+  --border: #d5e4ee;
+  --shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
+  --radius: 1.2rem;
+  --transition: 0.14s cubic-bezier(.44,1.13,.21,.88);
+}
+body {
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+}
+.main-layout {
+  height: 100vh; min-height: 100vh;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+}
+.body-container {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: row;
+  background: var(--primary);
+}
+.sidenav-container {
+  min-width: 220px;
+  border-right: 1px solid var(--border);
+  background: var(--background);
+  box-shadow: var(--shadow);
+  display: flex;
+}
+.main-content {
+  flex: 1 1;
+  padding: 2.5rem 3vw 1rem;
+  min-width: 0;
+}
+.auth-content {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+}
+
+.card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.7rem 1.6rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: .8rem;
+  box-shadow: none;
+  transition: filter var(--transition), background var(--transition);
+  cursor: pointer;
+}
+button:hover, button:active {
+  filter: contrast(1.09) brightness(1.02);
+  background: #ed144b;
+}
+
+input, select, textarea {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.6rem 1rem;
+  border-radius: .7rem;
+  border: 1px solid var(--border);
+  margin-bottom: 1.1rem;
+  outline: none;
+  transition: border-color var(--transition);
+  background: #fff;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent);
+}
+
+h1, h2, h3 {
+  font-family: 'Inter Tight', Inter, Arial, sans-serif;
+  margin-top: 0.5em;
+}

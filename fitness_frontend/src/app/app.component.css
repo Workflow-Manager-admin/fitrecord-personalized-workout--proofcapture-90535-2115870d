@@ -1,0 +1,5 @@
+.main-layout { height: 100vh; display: flex; flex-direction: column;}
+.body-container { display: flex; flex: 1 0 0; }
+.sidenav-container { min-width: 220px; }
+.main-content { flex: 1 1; padding: 2.5rem 3vw 1rem; }
+.auth-content { min-height: 80vh; display: flex; align-items: center; justify-content: center;}
